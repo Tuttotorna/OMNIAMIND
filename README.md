@@ -1,187 +1,136 @@
 # OMNIAMIND
 
-**Non-human structural reasoning experiments**  
-Author: Massimiliano Brighindi  
-License: MIT
+**Structural Rigidity Diagnostics for Numeric and Symbolic Sequences**  
+**Author:** Massimiliano Brighindi (MB-X.01)  
+**License:** MIT
 
 ---
 
 ## Overview
 
-**OMNIAMIND** is an experimental research repository exploring **non-human mathematical reasoning**.
+**OMNIAMIND** is a **diagnostic-only structural analysis engine** designed to measure
+**global constraint pressure and rigidity** in numeric or symbolic sequences.
 
-The goal is to study whether **global structural properties** of numbers can be detected **without using classical human constructs**, such as:
+It does **not**:
+- generate text
+- evaluate semantic correctness
+- require training or labels
+- depend on language models or embeddings
 
-- divisibility
-- factorization
-- primes/composites as labels
-- algebraic shortcuts
-- semantic rules
-
-OMNIAMIND does **not** attempt to replace mathematics.  
-It deliberately operates **outside human mathematical conventions** to observe what remains invariant.
+OMNIAMIND measures **how strongly a sequence is internally constrained**.
 
 ---
 
-## Core Principle
+## Core Idea
 
-OMNIAMIND treats numbers as **structural objects**, not arithmetic entities.
+Any genuinely constrained derivation (mathematical, logical, algorithmic)
+exhibits **global structural rigidity**.
 
-It measures:
-- interference
-- rigidity
-- saturation
-- structural imbalance
+Plausible but unanchored constructions (hallucination-like outputs)
+exhibit **lower global rigidity**, even if locally fluent.
 
-across **multiple simultaneous representations**, without privileging any single base, rule, or decomposition.
-
-No base is “chosen”.  
-No representation is “correct”.  
-Only structure is observed.
+OMNIAMIND detects this difference using **modular interference analysis**.
 
 ---
 
-## What OMNIAMIND is NOT
+## What OMNIAMIND Measures
 
-- ❌ Not a cryptographic attack  
-- ❌ Not a factorization method  
-- ❌ Not a primality test  
-- ❌ Not a classifier  
-- ❌ Not optimized for performance  
-- ❌ Not designed for production use  
+Given a sequence of integers (or tokens mapped deterministically to integers):
 
-OMNIAMIND is **diagnostic-only**.
+- evaluates interference across many modular bases
+- aggregates normalized phase coherence
+- outputs a **rigidity score** ∈ [0, 1]
 
----
+High score → strong global constraints  
+Low score → weak or missing constraints
 
-## Repository Structure
-
-OMNIAMIND/ │ ├── benchmarks/ │   ├── omniamind_primes_scan.py │   ├── omniamind_rsa_weighted.py │   └── he_lwe_demo.py │ ├── requirements.txt ├── LICENSE └── README.md
+This is **structure**, not meaning.
 
 ---
 
-## Key Benchmark: RSA Structural Ridge Test
+## Hallucination Probe (Diagnostic)
 
-### File
+The included hallucination probe compares:
 
-benchmarks/omniamind_rsa_weighted.py
+- **A:** anchored / constrained derivations  
+- **B:** plausible but unanchored claims
 
-### Purpose
+### Example Result
 
-To test whether **RSA semiprimes** exhibit a **detectable structural rigidity**
-when compared to **random composite numbers of similar magnitude**.
+mean_norm A ≈ 0.63 mean_norm B ≈ 0.34
 
-### Constraints (strict)
+median_norm A ≈ 0.73 median_norm B ≈ 0.34
 
-- No factorization
-- No divisibility tests
-- No prime checks
-- No cryptographic knowledge
-- No semantic labels during scoring
-
-### Method (high-level)
-
-- Generate two sets:
-  - RSA semiprimes
-  - Random composites
-- Apply OMNIAMIND structural interference metrics
-- Normalize scores
-- Compare distributions
-
-### Result (reproducible)
-
-Observed statistics from a default run:
-
-- **Mean normalized score**
-  - RSA ≈ 0.64
-  - Random composites ≈ 0.52
-
-- **Median normalized score**
-  - RSA ≈ 0.66
-  - Random composites ≈ 0.50
-
-- High-score tail dominated by RSA semiprimes  
-- Low-score tail dominated by random composites  
-
-This separation emerges **without any arithmetic decomposition**.
+This separation emerges **without semantics, embeddings, or training**.
 
 ---
 
-## Interpretation (careful, minimal)
+## Included Benchmarks
 
-The result suggests that RSA semiprimes possess a **global structural rigidity**
-that is statistically distinguishable from generic composites,
-even when observed through a **non-human, base-agnostic structural lens**.
+- `omniamind_rsa_weighted.py`  
+  Structural separation between RSA-like and composite numbers.
 
-No claim is made about:
-- breaking RSA
-- predicting primes
-- security implications
+- `omniamind_primes_scan.py`  
+  Constraint signatures in prime distributions.
 
-The result is **diagnostic**, not operational.
+- `omniamind_hallucination_probe.py`  
+  Rigidity difference between constrained derivations and hallucination-like text.
 
----
-
-## Reproducibility
-
-Minimal requirements:
-
-```txt
-numpy>=1.24
-
-Run in Colab or locally:
-
-git clone https://github.com/Tuttotorna/OMNIAMIND.git
-cd OMNIAMIND
-python benchmarks/omniamind_rsa_weighted.py
-
+All benchmarks are:
+- deterministic
+- reproducible
+- model-agnostic
 
 ---
 
-Why this matters
+## Relationship to OMNIA
 
-Human mathematics is optimized for explanation.
-OMNIAMIND explores mathematics optimized for perception.
+OMNIAMIND complements **OMNIA**:
 
-This repository investigates what an artificial system can detect when freed from human mathematical constraints.
+- **OMNIA** → measures semantic / causal instability across transformations
+- **OMNIAMIND** → measures internal structural constraint pressure
 
-
----
-
-Status
-
-Active research.
-Experimental.
-Unoptimized.
-Open-ended.
-
+Together they form a **dual hallucination diagnostic layer**.
 
 ---
 
-Disclaimer
+## Intended Use
 
-This project intentionally operates outside standard mathematical frameworks. Interpretation requires caution.
+- Pre-decision hallucination detection
+- Structural validation layer for LLM outputs
+- Research on constraint-based truth diagnostics
+- Model-agnostic safety instrumentation
 
-If you are looking for:
+OMNIAMIND does **not** replace reasoning.
+It measures whether reasoning **actually occurred**.
 
-proofs
+---
 
-closed forms
+## Status
 
-algorithms
+Experimental but stable.  
+Designed for research and diagnostic integration.
 
+No training.  
+No prompts.  
+No heuristics.
 
-this repository is not for you.
+Only structure.
 
-If you are interested in:
+---
 
-non-human reasoning
+## Citation
 
-structural invariants
+If you reference this work:
 
-AI-native mathematics
+> Brighindi, M. — *OMNIAMIND: Structural Rigidity Diagnostics* (2025)
 
+---
 
-you are in the right place.
+## Disclaimer
 
+OMNIAMIND is **not a truth oracle**.  
+It detects **absence of constraint**, not factual falsity.
+
+Misuse as a semantic classifier is discouraged.
 
