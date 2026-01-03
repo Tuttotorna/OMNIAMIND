@@ -29,4 +29,4 @@ if __name__ == "__main__":
     scores, norm = omniamind_primes(200)
     for n, v in scores.items():
         if v < 0.25:  # structural minima
-            print(n, round(v, 4)
+            print(n, round(v, 4))
