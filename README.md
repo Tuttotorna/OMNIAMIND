@@ -1,6 +1,6 @@
 # OMNIAMIND
 
-**Structural Boundary Stability Diagnostics for Numeric and Symbolic Sequences**  
+**Structural Boundary Stability Diagnostics**  
 **Author:** Massimiliano Brighindi (MB-X.01)  
 **License:** MIT
 
@@ -8,30 +8,30 @@
 
 ## Overview
 
-**OMNIAMIND** is a **diagnostic-only structural analysis engine** designed to measure  
-**global constraint pressure and boundary stability** in numeric or symbolic sequences.
+**OMNIAMIND** is a **diagnostic-only structural analysis framework** designed to measure  
+**boundary stability and global constraint pressure** in numeric and symbolic sequences.
 
 It does **not**:
-- generate text
+- generate outputs
 - evaluate semantic correctness
 - perform factorization or divisibility tests
-- require training, labels, or embeddings
-- depend on language models
+- rely on training, labels, embeddings, or language models
+- optimize or predict
 
 OMNIAMIND measures **how strongly a structure is constrained as a whole**.
 
 ---
 
-## Core Idea
+## Core Principle
 
 Any genuinely constrained derivation — mathematical, logical, or algorithmic —  
 exhibits **global structural rigidity**.
 
 Plausible but unanchored constructions  
-(e.g. hallucination-like outputs or arbitrary composites)  
+(e.g. arbitrary composites or hallucination-like textual outputs)  
 exhibit **lower global rigidity**, even if locally fluent or well-formed.
 
-OMNIAMIND detects this difference using **multi-base modular interference analysis**.
+OMNIAMIND detects this difference using **multi-base modular interference probing**.
 
 This is a **structural property**, not a semantic one.
 
@@ -39,16 +39,19 @@ This is a **structural property**, not a semantic one.
 
 ## Boundary Interpretation
 
-OMNIAMIND does **not** treat boundaries as reactive or observer-dependent entities.
+OMNIAMIND treats boundaries as **structural objects**, not as interpretative constructs.
 
-The probing process does not alter, negotiate, or adapt the boundary.  
-It merely exposes how the boundary constrains admissible structure.
+The probing process:
+- does **not** alter the boundary
+- does **not** induce feedback
+- does **not** depend on the observer
+
+It merely exposes how strongly a boundary constrains admissible structure.
 
 In this framework:
-
-- the boundary is **revealed**, not constructed  
-- stability is **measured**, not induced  
-- probing does **not** generate feedback, meaning, or interpretation  
+- the boundary is **revealed**, not constructed
+- stability is **measured**, not induced
+- meaning is **external** to the system
 
 Any observed rigidity is interpreted as an **intrinsic property of the structure**,  
 not as an artifact of observation.
@@ -58,56 +61,77 @@ not as an artifact of observation.
 ## What OMNIAMIND Measures
 
 Given a deterministic sequence of integers  
-(or tokens mapped deterministically to integers), OMNIAMIND:
+(or tokens deterministically mapped to integers), OMNIAMIND:
 
-- evaluates interference across many modular bases  
-- aggregates normalized phase coherence  
+- evaluates interference across many modular bases
+- aggregates normalized phase coherence
 - outputs a **rigidity score** ∈ [0, 1]
 
 Interpretation:
-
-- **High score** → strong global constraints / stable boundary  
+- **High score** → strong global constraints / stable boundary
 - **Low score** → weak or absent constraints
 
-This measures **structure**, not correctness or truth.
+OMNIAMIND measures **structure**, not truth.
 
 ---
 
-## Hallucination Probe (Diagnostic)
+## Benchmarks Included
 
-The included hallucination probe compares:
+### 1. RSA Structural Ridge (Weighted)
 
-- **A:** anchored / constrained derivations  
-- **B:** plausible but unanchored claims  
+File:
 
-Example result (representative run):
+benchmarks/omniamind_rsa_weighted.py
 
-mean_norm A ≈ 0.63 mean_norm B ≈ 0.34
+Purpose:
+- Compare **RSA-like semiprimes** with **random composite numbers**
+- Same order of magnitude
+- No factorization
+- No divisibility tests
 
-median_norm A ≈ 0.73 median_norm B ≈ 0.34
+Observation:
+- RSA semiprimes cluster at **higher structural rigidity**
+- Random composites cluster lower
+- Separation emerges without cryptographic knowledge
 
-This separation emerges **without semantics, embeddings, prompts, or training**.
+This is **not** an attack on RSA.  
+It is a **diagnostic signal** indicating a distinct structural regime.
 
 ---
 
-## Included Benchmarks
+### 2. Hallucination Probe (Structural)
 
-- `omniamind_rsa_weighted.py`  
-  Structural separation between RSA-like semiprimes and random composites  
-  of comparable magnitude.
+File:
 
-- `omniamind_primes_scan.py`  
-  Constraint signatures in prime distributions via modular interference.
+benchmarks/omniamind_hallucination_probe.py
 
-- `omniamind_hallucination_probe.py`  
-  Rigidity contrast between constrained derivations and hallucination-like text.
+Purpose:
+- Compare **anchored / constrained derivations**
+  vs **plausible but unanchored textual outputs**
+- No semantics
+- No embeddings
+- No training
 
-All benchmarks are:
+Representative result:
 
-- deterministic  
-- reproducible  
-- model-agnostic  
-- diagnostic-only  
+mean_norm (anchored) ≈ 0.63 mean_norm (hallucination-like) ≈ 0.34
+
+median_norm (anchored) ≈ 0.73 median_norm (hallucination-like) ≈ 0.34
+
+This separation emerges purely from **structural probing**.
+
+---
+
+### 3. Prime Structure Scan
+
+File:
+
+benchmarks/omniamind_primes_scan.py
+
+Purpose:
+- Explore constraint signatures in prime distributions
+- Without primality testing
+- Without arithmetic decomposition
 
 ---
 
@@ -115,52 +139,69 @@ All benchmarks are:
 
 OMNIAMIND complements **OMNIA**:
 
-- **OMNIA** → measures semantic, causal, and temporal instability under transformation  
-- **OMNIAMIND** → measures internal structural constraint pressure and boundary stability  
+- **OMNIA** → measures semantic, causal, and temporal instability under transformation
+- **OMNIAMIND** → measures internal structural constraint pressure and boundary stability
 
-Together they form a **dual diagnostic layer** for hallucination and instability detection.
+Together they form a **dual diagnostic layer** for instability and hallucination detection.
 
 ---
 
 ## Intended Use
 
-- Pre-decision hallucination detection  
-- Structural validation layer for LLM outputs  
-- Research on constraint-based diagnostics  
-- Model-agnostic safety instrumentation  
+- Diagnostic analysis of structured outputs
+- Pre-decision hallucination detection
+- Structural validation layer for AI systems
+- Research on boundary stability and constraint-based diagnostics
 
 OMNIAMIND does **not** replace reasoning.  
 It measures whether **global constraint actually occurred**.
 
 ---
 
-## Status
+## Reproducibility
 
-Experimental but stable.  
-Designed for research and diagnostic integration.
+Minimal requirement:
 
-No training.  
-No prompts.  
-No heuristics.
+numpy >= 1.24
 
-Only structure.
+Run locally:
+```bash
+git clone https://github.com/Tuttotorna/OMNIAMIND.git
+cd OMNIAMIND
+python benchmarks/omniamind_rsa_weighted.py
+python benchmarks/omniamind_hallucination_probe.py
+
+All benchmarks are deterministic and reproducible.
+
 
 ---
 
-## Citation
+Status
+
+Experimental but stable.
+Diagnostic-only.
+No roadmap.
+No claims beyond observation.
+
+
+---
+
+Citation
 
 If you reference this work:
 
-> Brighindi, M. — *OMNIAMIND: Structural Boundary Stability Diagnostics* (2025)
+> Brighindi, M. — OMNIAMIND: Structural Boundary Stability Diagnostics (2025)
+
+
+
 
 ---
 
-## Disclaimer
+Disclaimer
 
-OMNIAMIND is **not a truth oracle**.  
-It detects **absence of structural constraint**, not factual falsity.
+OMNIAMIND is not a truth oracle.
+It detects absence of structural constraint, not factual falsity.
 
 Use as a semantic classifier or fact checker is discouraged.
 
 
-.
