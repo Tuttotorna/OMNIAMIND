@@ -1,47 +1,187 @@
 # OMNIAMIND
-Exploratory research on pre-formal structural reasoning and stability diagnostics. This repository contains experimental frameworks (e.g. Hardness Envelope) for analyzing invariance and collapse in complex problem spaces. Not cryptanalysis. Not attacks.
-# OMNIAMIND
 
-Exploratory research on **pre-formal structural reasoning** and **stability diagnostics**.
+**Non-human structural reasoning experiments**  
+Author: Massimiliano Brighindi  
+License: MIT
 
-This repository contains experimental frameworks (e.g. **Hardness Envelope**) for analyzing **invariance** and **collapse** in complex problem spaces.
+---
 
-**Not cryptanalysis. Not attacks.**  
-This work is diagnostic-only: it measures structural stability under lawful transformations.
+## Overview
 
-## Relationship to LON / OMNIA
-- **LON / OMNIA**: stable, model-agnostic structural measurement engine.
-- **OMNIAMIND** (this repo): exploratory research layer (quarantined from OMNIA to keep OMNIA strictly “tool-grade”).
+**OMNIAMIND** is an experimental research repository exploring **non-human mathematical reasoning**.
 
-## Hardness Envelope (HE) — idea (minimal)
-For a hardness assumption problem \(P\), HE measures whether instances remain **structurally stable** under transformations that preserve the problem class.
+The goal is to study whether **global structural properties** of numbers can be detected **without using classical human constructs**, such as:
 
-Output:
-- an instability score (Ω_HE)
-- a coarse label: ROBUST / BORDERLINE / FRAGILE
-- machine-readable reports (JSON)
+- divisibility
+- factorization
+- primes/composites as labels
+- algebraic shortcuts
+- semantic rules
 
-## Current artifact
-### HE-LWE demo (synthetic)
-A diagnostic demo for **LWE-like** synthetic instances:
-- generates (A, b) with noise
-- applies lawful transformations (row/col permutations, conservative centering, sparse sample mixing)
-- extracts structural features (SVD conditioning, effective rank, correlations)
-- computes **Ω_HE** as dispersion across transforms
+OMNIAMIND does **not** attempt to replace mathematics.  
+It deliberately operates **outside human mathematical conventions** to observe what remains invariant.
 
-This demo is **not** cryptanalysis and **not** a break of any real scheme.
+---
 
-## Quick run
-```bash
-pip install -r requirements.txt
-python benchmarks/he_lwe_demo.py
+## Core Principle
 
-Output:
-prints Ω_HE and a label for a small parameter grid
-writes he_lwe_demo_report.json
-Roadmap (short)
-HE(P) adapters for additional problem families (diagnostic-only)
-stability maps over parameter regimes
-connect HE outputs back to OMNIA as optional “research artifacts” only
-Author: Massimiliano Brighindi
-Signature: MB-X.01 / Omniabase±
+OMNIAMIND treats numbers as **structural objects**, not arithmetic entities.
+
+It measures:
+- interference
+- rigidity
+- saturation
+- structural imbalance
+
+across **multiple simultaneous representations**, without privileging any single base, rule, or decomposition.
+
+No base is “chosen”.  
+No representation is “correct”.  
+Only structure is observed.
+
+---
+
+## What OMNIAMIND is NOT
+
+- ❌ Not a cryptographic attack  
+- ❌ Not a factorization method  
+- ❌ Not a primality test  
+- ❌ Not a classifier  
+- ❌ Not optimized for performance  
+- ❌ Not designed for production use  
+
+OMNIAMIND is **diagnostic-only**.
+
+---
+
+## Repository Structure
+
+OMNIAMIND/ │ ├── benchmarks/ │   ├── omniamind_primes_scan.py │   ├── omniamind_rsa_weighted.py │   └── he_lwe_demo.py │ ├── requirements.txt ├── LICENSE └── README.md
+
+---
+
+## Key Benchmark: RSA Structural Ridge Test
+
+### File
+
+benchmarks/omniamind_rsa_weighted.py
+
+### Purpose
+
+To test whether **RSA semiprimes** exhibit a **detectable structural rigidity**
+when compared to **random composite numbers of similar magnitude**.
+
+### Constraints (strict)
+
+- No factorization
+- No divisibility tests
+- No prime checks
+- No cryptographic knowledge
+- No semantic labels during scoring
+
+### Method (high-level)
+
+- Generate two sets:
+  - RSA semiprimes
+  - Random composites
+- Apply OMNIAMIND structural interference metrics
+- Normalize scores
+- Compare distributions
+
+### Result (reproducible)
+
+Observed statistics from a default run:
+
+- **Mean normalized score**
+  - RSA ≈ 0.64
+  - Random composites ≈ 0.52
+
+- **Median normalized score**
+  - RSA ≈ 0.66
+  - Random composites ≈ 0.50
+
+- High-score tail dominated by RSA semiprimes  
+- Low-score tail dominated by random composites  
+
+This separation emerges **without any arithmetic decomposition**.
+
+---
+
+## Interpretation (careful, minimal)
+
+The result suggests that RSA semiprimes possess a **global structural rigidity**
+that is statistically distinguishable from generic composites,
+even when observed through a **non-human, base-agnostic structural lens**.
+
+No claim is made about:
+- breaking RSA
+- predicting primes
+- security implications
+
+The result is **diagnostic**, not operational.
+
+---
+
+## Reproducibility
+
+Minimal requirements:
+
+```txt
+numpy>=1.24
+
+Run in Colab or locally:
+
+git clone https://github.com/Tuttotorna/OMNIAMIND.git
+cd OMNIAMIND
+python benchmarks/omniamind_rsa_weighted.py
+
+
+---
+
+Why this matters
+
+Human mathematics is optimized for explanation.
+OMNIAMIND explores mathematics optimized for perception.
+
+This repository investigates what an artificial system can detect when freed from human mathematical constraints.
+
+
+---
+
+Status
+
+Active research.
+Experimental.
+Unoptimized.
+Open-ended.
+
+
+---
+
+Disclaimer
+
+This project intentionally operates outside standard mathematical frameworks. Interpretation requires caution.
+
+If you are looking for:
+
+proofs
+
+closed forms
+
+algorithms
+
+
+this repository is not for you.
+
+If you are interested in:
+
+non-human reasoning
+
+structural invariants
+
+AI-native mathematics
+
+
+you are in the right place.
+
+
