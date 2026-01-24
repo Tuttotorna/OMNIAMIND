@@ -1,10 +1,10 @@
 OMNIAMIND — Structural Boundary Stability Diagnostics
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18362168.svg)](https://doi.org/10.5281/zenodo.18362168)
 Author: Massimiliano Brighindi (MB-X.01)
 License: MIT
 Status: Experimental but stable
 Project lineage: MB-X.01 / OMNIA
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18362168.svg)](https://doi.org/10.5281/zenodo.18362168)
 
 ---
 
