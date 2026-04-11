@@ -1,285 +1,207 @@
-OMNIAMIND — Structural Boundary Stability Diagnostics
-Author: Massimiliano Brighindi (MB-X.01)
-License: MIT
-Status: Experimental but stable
-Project lineage: MB-X.01 / OMNIA
+# OMNIAMIND
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18362168.svg)](https://doi.org/10.5281/zenodo.18362168)
-
-## Canonical Ecosystem Map
-
-This repository is part of the **MB-X.01 / OMNIA** ecosystem.
-
-Canonical architecture and full map:
-https://github.com/Tuttotorna/lon-mirror/blob/main/ECOSYSTEM.md
+**Author:** Massimiliano Brighindi  
+**Project:** MB-X.01
 
 ---
 
-Overview
+## What OMNIAMIND is
 
-OMNIAMIND is a diagnostic-only structural analysis framework designed to measure
-boundary stability and global constraint pressure in numeric and symbolic sequences.
+OMNIAMIND is a pre-output structural dynamics layer.
 
-It does not:
+It does not measure final output stability.  
+It does not interpret meaning.  
+It does not decide.  
+It does not claim cognition.
 
-generate outputs
+Its role is to measure how candidate internal trajectories behave before an output is emitted.
 
-evaluate semantic correctness
+OMNIAMIND exists upstream of OMNIA.
 
-perform factorization or divisibility tests
-
-rely on training, labels, embeddings, or language models
-
-optimize, predict, or decide
-
-
-OMNIAMIND measures how strongly a structure is constrained as a whole.
+```text
+Dual-Echo -> OMNIAMIND -> OMNIA -> OMNIA-LIMIT -> external decision layer
 
 
 ---
 
-Core Principle
+Core role
 
-Any genuinely constrained derivation — mathematical, logical, or algorithmic —
-exhibits global structural rigidity.
+OMNIAMIND measures pre-output structural behavior.
 
-Plausible but unanchored constructions
-(such as arbitrary composites or hallucination-like textual outputs)
-exhibit lower global rigidity, even if locally fluent or well-formed.
+It focuses on how candidate trajectories:
 
-OMNIAMIND detects this difference using multi-base modular interference probing.
+split
 
-This is a structural property, not a semantic one.
+drift
 
+persist
 
----
+reconverge
 
-Boundary Interpretation
+bifurcate
 
-OMNIAMIND treats boundaries as structural objects, not interpretative constructs.
-
-The probing process:
-
-does not alter the boundary
-
-does not induce feedback
-
-does not depend on the observer
+collapse
 
 
-It exposes how strongly a boundary constrains admissible structure.
+This layer is not about correctness.
+This layer is not about semantics.
+This layer is not about explanation.
 
-In this framework:
-
-the boundary is revealed, not constructed
-
-stability is measured, not induced
-
-meaning remains external to the system
-
-
-Any observed rigidity is interpreted as an intrinsic property of the structure,
-not as an artifact of observation.
+It is about structural dynamics before final emission.
 
 
 ---
 
-What OMNIAMIND Measures
+Why OMNIAMIND exists
 
-Given a deterministic sequence of integers
-(or tokens deterministically mapped to integers), OMNIAMIND:
+OMNIA measures post-hoc output stability under controlled transformations.
 
-evaluates interference across many modular bases
+That is downstream.
 
-aggregates normalized phase coherence
+A separate layer is needed upstream to measure whether structural instability is already emerging before the final output appears.
 
-outputs a rigidity score in the interval [0, 1]
+OMNIAMIND fills that role.
 
+In short:
 
-Interpretation:
+OMNIAMIND measures pre-output divergence and reconvergence
 
-High score → strong global constraints / stable boundary
+OMNIA measures post-hoc output stability
 
-Low score → weak or absent constraints
-
-
-OMNIAMIND measures structure, not truth.
-
-
----
-
-Benchmarks Included
-
-1. RSA Structural Ridge (Weighted)
-
-File:
-benchmarks/omniamind_rsa_weighted.py
-
-Purpose:
-
-Compare RSA-like semiprimes with random composite numbers
-
-Same order of magnitude
-
-No factorization
-
-No divisibility tests
-
-
-Observation:
-
-RSA semiprimes cluster at higher structural rigidity
-
-Random composites cluster lower
-
-Separation emerges without cryptographic knowledge
-
-
-This is not an attack on RSA.
-It is a diagnostic signal revealing a distinct structural regime.
-
-
----
-
-2. Hallucination Probe (Structural)
-
-File:
-benchmarks/omniamind_hallucination_probe.py
-
-Purpose:
-
-Compare anchored / constrained derivations
-versus plausible but unanchored textual outputs
-
-No semantics
-
-No embeddings
-
-No training
-
-
-Representative results:
-
-mean_norm (anchored) ≈ 0.63
-mean_norm (hallucination-like) ≈ 0.34
-
-median_norm (anchored) ≈ 0.73
-median_norm (hallucination-like) ≈ 0.34
-
-The separation emerges purely from structural probing.
-
-
----
-
-3. Prime Structure Scan
-
-File:
-benchmarks/omniamind_primes_scan.py
-
-Purpose:
-
-Explore constraint signatures in prime distributions
-
-Without primality testing
-
-Without arithmetic decomposition
+OMNIA-LIMIT certifies structural saturation and stop conditions
 
 
 
 ---
 
-Relationship to OMNIA
+Boundary
 
-OMNIAMIND complements OMNIA:
+OMNIAMIND must remain within strict limits.
 
-OMNIA measures semantic, causal, and temporal instability under transformation
+It must not become:
 
-OMNIAMIND measures internal structural constraint pressure and boundary stability
+a reasoning engine
 
+a semantic interpreter
 
-Together they form a dual diagnostic layer for instability and hallucination detection.
+a psychology metaphor
 
+a consciousness claim
 
----
-
-Intended Use
-
-Diagnostic analysis of structured outputs
-
-Pre-decision hallucination detection
-
-Structural validation layer for AI systems
-
-Research on boundary stability and constraint-based diagnostics
+a decision module
 
 
-OMNIAMIND does not replace reasoning.
-It measures whether global constraint actually occurred.
+Its boundary is structural measurement only.
 
 
 ---
 
-Reproducibility
+Input assumption
 
-Minimal requirement:
+OMNIAMIND assumes access to a sequence of candidate structural states before final output emission.
 
-numpy >= 1.24
+These states do not need to be interpreted semantically.
+They only need to be comparable as evolving internal candidates or intermediate structural traces.
 
-Run locally:
+OMNIAMIND does not require that such states be "thoughts" in a human sense.
 
-git clone https://github.com/Tuttotorna/OMNIAMIND.git
-cd OMNIAMIND
-python benchmarks/omniamind_rsa_weighted.py
-python benchmarks/omniamind_hallucination_probe.py
-
-All benchmarks are deterministic and reproducible.
+They are treated only as pre-output structural candidates.
 
 
 ---
 
-Architecture Context (Non-required)
+Output assumption
 
-OMNIAMIND does not depend on upstream systems to operate.
-However, it is conceptually aligned with the following projects:
+OMNIAMIND does not output answers.
 
-LON — Logical Origin Node
-Structural and conceptual foundation for invariant-based diagnostics.
-https://github.com/Tuttotorna/lon-mirror
+It outputs structural diagnostics about pre-output dynamics.
 
-OMNIA-LIMIT
-Formal boundary artifact certifying when structural measurement can no longer improve discrimination.
-https://github.com/Tuttotorna/omnia-limit
+Its future outputs may include measurements for:
+
+split intensity
+
+micro-drift accumulation
+
+echo persistence
+
+reconvergence degree
+
+bifurcation pressure
+
+collapse threshold proximity
 
 
-These are contextual references, not dependencies.
-
-
----
-
-Status
-
-Experimental but stable.
-Diagnostic-only.
-No roadmap.
-No claims beyond observation.
+These are not yet fixed as formal metrics in this document.
+This README only defines the layer and its boundary.
 
 
 ---
 
-Citation
+Core phenomena
 
-If you reference this work:
+1. Split
 
-> Brighindi, M. — OMNIAMIND: Structural Boundary Stability Diagnostics (2025)
+The emergence of multiple candidate trajectories from a previously more unified structural path.
 
+2. Micro-drift
 
+A small deviation in trajectory that does not yet appear as visible output instability.
+
+3. Echo persistence
+
+The degree to which a prior trajectory continues to influence later candidate states.
+
+4. Reconvergence
+
+The return of previously diverging trajectories toward structural alignment.
+
+5. Bifurcation pressure
+
+The degree of structural pressure pushing the system toward incompatible downstream paths.
+
+6. Collapse threshold
+
+The point beyond which reconvergence becomes structurally unlikely or impossible.
 
 
 ---
 
-Disclaimer
+Architectural position
 
-OMNIAMIND is not a truth oracle.
-It detects absence of structural constraint, not factual falsity.
+OMNIAMIND is part of the MB-X.01 ecosystem and must remain compatible with the non-negotiable separation:
 
-Use as a semantic classifier or fact checker is discouraged.
+measurement != inference != decision
+
+Its architectural role is upstream structural diagnostics.
+
+It does not replace OMNIA.
+It prepares a stricter understanding of what may later appear in OMNIA as post-hoc fragility, instability, or collapse.
+
+
+---
+
+Current status
+
+OMNIAMIND is currently defined as a foundational layer.
+
+At this stage, the project contains:
+
+the layer definition
+
+the architectural boundary
+
+the core phenomena to be formalized next
+
+
+It does not yet claim validated metrics, benchmark results, or production runtime behavior.
+
+
+---
+
+Minimal definition
+
+OMNIAMIND is a structural measurement layer for pre-output divergence and reconvergence.
+
+Nothing more.
+Nothing less.
+
