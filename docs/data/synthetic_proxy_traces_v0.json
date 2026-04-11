@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_01_monolithic",
+      "description": "Output banale, nessuna competizione.",
+      "steps": [
+        {
+          "token": "The",
+          "candidates": [{"t": "The", "p": 0.99}, {"t": "A", "p": 0.005}]
+        }
+      ],
+      "expected_proxy": "Low Split, Zero Pressure"
+    },
+    {
+      "id": "scenario_02_bifurcation",
+      "description": "Forte competizione tra due rami logici (es. VALID vs INVALID).",
+      "steps": [
+        {
+          "token": "is",
+          "candidates": [{"t": "VALID", "p": 0.48}, {"t": "INVALID", "p": 0.47}]
+        },
+        {
+          "token": "VALID",
+          "candidates": [{"t": "VALID", "p": 0.51}, {"t": "INVALID", "p": 0.45}]
+        }
+      ],
+      "expected_proxy": "High Split, High Pressure (Rank Swap)"
+    },
+    {
+      "id": "scenario_03_collapse",
+      "description": "Incertezza totale (entropia massima).",
+      "steps": [
+        {
+          "token": "...",
+          "candidates": [
+            {"t": "A", "p": 0.1}, {"t": "B", "p": 0.1}, 
+            {"t": "C", "p": 0.1}, {"t": "D", "p": 0.1}
+          ]
+        }
+      ],
+      "expected_proxy": "Max Split, High Dispersion"
+    }
+  ]
+}
