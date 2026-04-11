@@ -11,6 +11,7 @@
 Analytical branch: operational
 Backend branch: unresolved
 Mini-tool offline path: active
+Variant comparison branch: active
 
 
 ---
@@ -29,6 +30,12 @@ synthetic_proxy_runner.py
 
 report_generator.py
 
+proxy_variants.py
+
+proxy_variant_runner.py
+
+variant_report_generator.py
+
 
 
 ---
@@ -39,16 +46,18 @@ The repository can already:
 
 load synthetic candidate traces
 
-compute Split
+compute Split v0
 
-compute Bifurcation Pressure
+compute Bifurcation Pressure v0
+
+compare v0 against v0.1
 
 save structured JSON results
 
-generate a Markdown report
+generate Markdown reports
 
 
-This is sufficient for offline structural sanity testing.
+This is sufficient for offline structural sanity testing and internal proxy comparison.
 
 
 ---
@@ -73,13 +82,21 @@ So the backend side remains unresolved.
 
 How to run the offline tool
 
-1. Run the proxy engine
+1. Run the baseline proxy engine
 
 python synthetic_proxy_runner.py
 
-2. Generate the Markdown report
+2. Generate the baseline Markdown report
 
 python report_generator.py
+
+3. Run the proxy variant comparison
+
+python proxy_variant_runner.py
+
+4. Generate the variant comparison report
+
+python variant_report_generator.py
 
 
 ---
@@ -92,15 +109,47 @@ data/synthetic_proxy_results_v0.json
 
 reports/synthetic_proxy_report_v0.md
 
+data/proxy_variant_comparison_v0_1.json
+
+reports/proxy_variant_report_v0_1.md
+
 
 
 ---
 
 Current meaning of the project
 
-OMNIAMIND v0 is currently a non-semantic structural proxy engine operating on synthetic candidate traces.
+OMNIAMIND currently exists in two states:
 
-It is analytically usable. It is not yet empirically validated on real generation traces.
+1. Analytical state
+
+A non-semantic structural proxy engine operating on synthetic candidate traces.
+
+2. Backend state
+
+A prepared but unresolved empirical path awaiting real generation traces from OpenAI or local runtime execution.
+
+
+---
+
+Current offline milestone
+
+The offline mini-tool now includes:
+
+formal proxy definitions
+
+synthetic validation traces
+
+deterministic baseline execution
+
+structured result schema
+
+baseline report generation
+
+internal comparison between proxy v0 and proxy v0.1
+
+
+This means the analytical branch is not only defined, but runnable and comparable.
 
 
 ---
@@ -113,10 +162,13 @@ Next possible directions
 2. add more synthetic scenarios
 
 
-3. add a second proxy variant (v0.1)
+3. introduce a third proxy variant
 
 
 4. wait for real backend traces later
+
+
+5. freeze OMNIAMIND v0/v0.1 as an offline analytical package
 
 
 
@@ -125,6 +177,6 @@ Next possible directions
 
 Minimal conclusion
 
-The analytical branch is complete enough to run.
+The analytical branch is complete enough to run and compare proxy variants offline.
 
 The backend branch is still pending external execution.
