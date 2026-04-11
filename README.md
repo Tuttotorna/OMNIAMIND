@@ -11,9 +11,9 @@
 
 OMNIAMIND is a structural measurement layer for pre-output candidate dynamics in large language models.
 
-It does not evaluate final output quality.
-It does not interpret meaning.
-It does not model psychology.
+It does not evaluate final output quality.  
+It does not interpret meaning.  
+It does not model psychology.  
 It does not claim cognition.
 
 Its purpose is narrower:
@@ -48,7 +48,7 @@ It measures only the geometry of candidate probability structure.
 
 ## Architectural position
 
-OMNIAMIND belongs to the MB-X.01 ecosystem and sits upstream of OMNIA:
+OMNIAMIND belongs to the MB-X.01 ecosystem and sits upstream of OMNIA.
 
 ```text
 Dual-Echo -> OMNIAMIND -> OMNIA -> OMNIA-LIMIT
@@ -65,13 +65,32 @@ OMNIA-LIMIT defines structural stop / saturation conditions
 
 ---
 
+Ecosystem position
+
+OMNIAMIND is an upstream analytical extension of the OMNIA ecosystem.
+
+It does not replace OMNIA.
+
+OMNIAMIND measures pre-output structural dynamics
+
+OMNIA remains the canonical post-hoc structural measurement engine
+
+OMNIA-LIMIT remains the downstream structural stop / saturation layer
+
+
+Canonical ecosystem map:
+https://github.com/Tuttotorna/lon-mirror/blob/main/ECOSYSTEM.md
+
+
+---
+
 Current scope
 
 The current repository state is split into two branches:
 
 Branch	Status	Note
 
-Analytical Branch	OPERATIONAL	Proxy definitions, synthetic traces, and deterministic runner are available.
+Analytical Branch	OPERATIONAL	Proxy definitions, synthetic traces, deterministic runner, and internal comparison logic are available.
 Backend Branch	UNRESOLVED	Real capture through OpenAI or local runtime is defined but not executed.
 
 
@@ -119,7 +138,8 @@ TV_t measures redistribution of probability mass across adjacent steps
 RS_t detects whether the top-ranked candidate changed
 
 
-This is a structural proxy only. It is not a semantic or cognitive claim.
+This is a structural proxy only.
+It is not a semantic or cognitive claim.
 
 
 ---
@@ -127,6 +147,14 @@ This is a structural proxy only. It is not a semantic or cognitive claim.
 Repository structure
 
 README.md
+STATUS.md
+MANIFEST.md
+result_schema.py
+synthetic_proxy_runner.py
+report_generator.py
+proxy_variants.py
+proxy_variant_runner.py
+variant_report_generator.py
 docs/
   PROXY_FORMALIZATION_v0.md
   CORE_PHENOMENA.md
@@ -144,7 +172,11 @@ docs/
     LLAMA_CPP_RESULT.md
 data/
   synthetic_proxy_traces_v0.json
-synthetic_proxy_runner.py
+  synthetic_proxy_results_v0.json
+  proxy_variant_comparison_v0_1.json
+reports/
+  synthetic_proxy_report_v0.md
+  proxy_variant_report_v0_1.md
 
 Main files:
 
@@ -153,6 +185,10 @@ docs/PROXY_FORMALIZATION_v0.md — mathematical definition of the v0 proxy layer
 data/synthetic_proxy_traces_v0.json — synthetic benchmark traces
 
 synthetic_proxy_runner.py — deterministic proxy runner over synthetic traces
+
+proxy_variants.py — structural proxy variants (v0 and v0.1)
+
+proxy_variant_runner.py — internal comparison runner for proxy variants
 
 docs/backend_assessments/ — backend readiness and assessment documents
 
@@ -164,20 +200,33 @@ Quick start (synthetic branch)
 
 The repository can already be exercised without any active backend.
 
-Run:
+1. Run the baseline proxy engine
 
 python synthetic_proxy_runner.py
 
-This processes the synthetic traces and writes proxy results for the predefined scenarios.
+2. Generate the baseline Markdown report
 
-The purpose of this step is not empirical model validation. It is structural sanity checking of the proxy logic.
+python report_generator.py
+
+3. Run the proxy variant comparison
+
+python proxy_variant_runner.py
+
+4. Generate the variant comparison report
+
+python variant_report_generator.py
+
+This branch processes synthetic traces and writes proxy results for the predefined scenarios.
+
+The purpose of this step is not empirical model validation.
+It is structural sanity checking of the proxy logic.
 
 
 ---
 
 Synthetic scenarios currently included
 
-The current synthetic dataset contains three minimal controlled cases:
+The current synthetic dataset contains three minimal controlled cases.
 
 scenario_01_monolithic
 
@@ -265,6 +314,8 @@ synthetic validation traces
 
 deterministic runner
 
+internal proxy comparison
+
 backend assessment protocols
 
 
@@ -280,7 +331,7 @@ The next valid milestones are:
 1. execute a real backend capture
 
 
-2. classify the first backend as ACCEPT / PROVISIONAL / REJECT
+2. classify the first backend as ACCEPT, PROVISIONAL, or REJECT
 
 
 3. run the first OMNIAMIND proxy computation on real traces
@@ -305,16 +356,17 @@ Minimal conclusion
 
 OMNIAMIND is a non-semantic structural measurement layer for pre-output candidate dynamics.
 
-Its current v0 state is operational in the analytical branch through:
+Its current v0 / v0.1 state is operational in the analytical branch through:
 
 formal proxy definitions
 
 synthetic traces
 
-deterministic execution stub
+deterministic execution stubs
+
+internal proxy comparison
 
 
 The backend branch is prepared but not yet empirically resolved.
 
 This repository therefore represents a structurally complete analytical core awaiting real candidate-trace input.
-
