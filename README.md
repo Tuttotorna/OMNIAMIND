@@ -1,4 +1,6 @@
-# OMNIAMIND
+# OMNIAMIND (v2.0-alpha)
+
+**Structural Measurement of Split and Bifurcation Pressure in LLM Candidate Traces**
 
 **Author:** Massimiliano Brighindi  
 **Project:** MB-X.01
@@ -7,201 +9,312 @@
 
 ## What OMNIAMIND is
 
-OMNIAMIND is a pre-output structural dynamics layer.
+OMNIAMIND is a structural measurement layer for pre-output candidate dynamics in large language models.
 
-It does not measure final output stability.  
-It does not interpret meaning.  
-It does not decide.  
+It does not evaluate final output quality.
+It does not interpret meaning.
+It does not model psychology.
 It does not claim cognition.
 
-Its role is to measure how candidate internal trajectories behave before an output is emitted.
+Its purpose is narrower:
 
-OMNIAMIND exists upstream of OMNIA.
+- measure how candidate probability mass fragments at a given step
+- measure how candidate dominance reorganizes across adjacent steps
+
+The current version focuses on two structural proxies:
+
+- **Split**
+- **Bifurcation Pressure**
+
+---
+
+## Core boundary
+
+OMNIAMIND is strictly **non-semantic**.
+
+It treats the model as an evolving candidate distribution, not as a linguistic agent.
+
+It does not measure:
+
+- truth
+- correctness
+- semantic similarity
+- reasoning quality
+- human-like uncertainty
+
+It measures only the geometry of candidate probability structure.
+
+---
+
+## Architectural position
+
+OMNIAMIND belongs to the MB-X.01 ecosystem and sits upstream of OMNIA:
 
 ```text
-Dual-Echo -> OMNIAMIND -> OMNIA -> OMNIA-LIMIT -> external decision layer
+Dual-Echo -> OMNIAMIND -> OMNIA -> OMNIA-LIMIT
 
+Within this chain:
 
----
+OMNIAMIND measures pre-output structural dynamics
 
-Core role
+OMNIA measures post-hoc output stability under controlled transformations
 
-OMNIAMIND measures pre-output structural behavior.
-
-It focuses on how candidate trajectories:
-
-split
-
-drift
-
-persist
-
-reconverge
-
-bifurcate
-
-collapse
-
-
-This layer is not about correctness.
-This layer is not about semantics.
-This layer is not about explanation.
-
-It is about structural dynamics before final emission.
-
-
----
-
-Why OMNIAMIND exists
-
-OMNIA measures post-hoc output stability under controlled transformations.
-
-That is downstream.
-
-A separate layer is needed upstream to measure whether structural instability is already emerging before the final output appears.
-
-OMNIAMIND fills that role.
-
-In short:
-
-OMNIAMIND measures pre-output divergence and reconvergence
-
-OMNIA measures post-hoc output stability
-
-OMNIA-LIMIT certifies structural saturation and stop conditions
+OMNIA-LIMIT defines structural stop / saturation conditions
 
 
 
 ---
 
-Boundary
+Current scope
 
-OMNIAMIND must remain within strict limits.
+The current repository state is split into two branches:
 
-It must not become:
+Branch	Status	Note
 
-a reasoning engine
-
-a semantic interpreter
-
-a psychology metaphor
-
-a consciousness claim
-
-a decision module
+Analytical Branch	OPERATIONAL	Proxy definitions, synthetic traces, and deterministic runner are available.
+Backend Branch	UNRESOLVED	Real capture through OpenAI or local runtime is defined but not executed.
 
 
-Its boundary is structural measurement only.
+Current milestone:
+
+Repository-level clarity and synthetic proxy validation
 
 
 ---
 
-Input assumption
-
-OMNIAMIND assumes access to a sequence of candidate structural states before final output emission.
-
-These states do not need to be interpreted semantically.
-They only need to be comparable as evolving internal candidates or intermediate structural traces.
-
-OMNIAMIND does not require that such states be "thoughts" in a human sense.
-
-They are treated only as pre-output structural candidates.
-
-
----
-
-Output assumption
-
-OMNIAMIND does not output answers.
-
-It outputs structural diagnostics about pre-output dynamics.
-
-Its future outputs may include measurements for:
-
-split intensity
-
-micro-drift accumulation
-
-echo persistence
-
-reconvergence degree
-
-bifurcation pressure
-
-collapse threshold proximity
-
-
-These are not yet fixed as formal metrics in this document.
-This README only defines the layer and its boundary.
-
-
----
-
-Core phenomena
+Current proxy layer (v0)
 
 1. Split
 
-The emergence of multiple candidate trajectories from a previously more unified structural path.
+Split measures local fragmentation of candidate probability mass at a single generation step.
 
-2. Micro-drift
+Version v0:
 
-A small deviation in trajectory that does not yet appear as visible output instability.
+S_t = 1 - max_i P_t(c_i)
 
-3. Echo persistence
+Interpretation:
 
-The degree to which a prior trajectory continues to influence later candidate states.
+low Split -> one dominant candidate
 
-4. Reconvergence
-
-The return of previously diverging trajectories toward structural alignment.
-
-5. Bifurcation pressure
-
-The degree of structural pressure pushing the system toward incompatible downstream paths.
-
-6. Collapse threshold
-
-The point beyond which reconvergence becomes structurally unlikely or impossible.
+high Split -> fragmented candidate mass
 
 
----
+2. Bifurcation Pressure
 
-Architectural position
+Bifurcation Pressure measures local instability between adjacent candidate states.
 
-OMNIAMIND is part of the MB-X.01 ecosystem and must remain compatible with the non-negotiable separation:
+Version v0 combines:
 
-measurement != inference != decision
+Total Variation shift
 
-Its architectural role is upstream structural diagnostics.
-
-It does not replace OMNIA.
-It prepares a stricter understanding of what may later appear in OMNIA as post-hoc fragility, instability, or collapse.
+Rank Swap
 
 
----
+B_t = 0.7 * TV_t + 0.3 * RS_t
 
-Current status
+where:
 
-OMNIAMIND is currently defined as a foundational layer.
+TV_t measures redistribution of probability mass across adjacent steps
 
-At this stage, the project contains:
-
-the layer definition
-
-the architectural boundary
-
-the core phenomena to be formalized next
+RS_t detects whether the top-ranked candidate changed
 
 
-It does not yet claim validated metrics, benchmark results, or production runtime behavior.
+This is a structural proxy only. It is not a semantic or cognitive claim.
 
 
 ---
 
-Minimal definition
+Repository structure
 
-OMNIAMIND is a structural measurement layer for pre-output divergence and reconvergence.
+README.md
+docs/
+  PROXY_FORMALIZATION_v0.md
+  CORE_PHENOMENA.md
+  MEASUREMENT_SKETCH.md
+  ACCESS_LEVELS.md
+  FIRST_EXPERIMENT_PATH.md
+  FIRST_PROXIES.md
+  backend_assessments/
+    OPENAI_CHECK.md
+    OPENAI_RESULT.md
+    OPENAI_EMPIRICAL_CHECK.md
+    LOCAL_CHECK.md
+    LOCAL_RUNTIME_STATUS.md
+    LLAMA_CPP_CHECK.md
+    LLAMA_CPP_RESULT.md
+data/
+  synthetic_proxy_traces_v0.json
+synthetic_proxy_runner.py
 
-Nothing more.
-Nothing less.
+Main files:
+
+docs/PROXY_FORMALIZATION_v0.md — mathematical definition of the v0 proxy layer
+
+data/synthetic_proxy_traces_v0.json — synthetic benchmark traces
+
+synthetic_proxy_runner.py — deterministic proxy runner over synthetic traces
+
+docs/backend_assessments/ — backend readiness and assessment documents
+
+
+
+---
+
+Quick start (synthetic branch)
+
+The repository can already be exercised without any active backend.
+
+Run:
+
+python synthetic_proxy_runner.py
+
+This processes the synthetic traces and writes proxy results for the predefined scenarios.
+
+The purpose of this step is not empirical model validation. It is structural sanity checking of the proxy logic.
+
+
+---
+
+Synthetic scenarios currently included
+
+The current synthetic dataset contains three minimal controlled cases:
+
+scenario_01_monolithic
+
+Single dominant candidate, negligible competition.
+
+Expected behavior:
+
+low Split
+
+zero Pressure
+
+
+scenario_02_bifurcation
+
+Two near-parity candidates with top-rank inversion across adjacent steps.
+
+Expected behavior:
+
+high Split
+
+high Pressure
+
+
+scenario_03_collapse
+
+Flat candidate mass with no dominant continuation.
+
+Expected behavior:
+
+maximal or near-maximal Split
+
+Pressure not applicable in the single-step case
+
+
+
+---
+
+Declared limits
+
+OMNIAMIND v0 has explicit limits.
+
+1. No semantics
+
+The system does not know whether two candidates are synonymous, contradictory, or equivalent in meaning.
+
+2. Observed-space only
+
+The current proxy layer operates only on exposed candidate distributions.
+
+It does not use:
+
+hidden states
+
+attention maps
+
+branch traces
+
+latent geometry
+
+
+3. Synthetic branch is not empirical validation
+
+Synthetic traces are only a structural test bench.
+
+They do not prove that the proxies will behave identically on real model traces.
+
+4. Backend branch remains unresolved
+
+No OpenAI or local llama.cpp empirical capture has yet been completed inside the current project state.
+
+
+---
+
+Why this repository exists in its current form
+
+The project reached an infrastructure block on real backend execution.
+
+Instead of fabricating empirical claims, the repository was stabilized around what could be completed with full internal consistency:
+
+proxy definition
+
+mathematical formalization
+
+synthetic validation traces
+
+deterministic runner
+
+backend assessment protocols
+
+
+This means the repository is analytically stable even though empirical backend validation is still pending.
+
+
+---
+
+Next steps
+
+The next valid milestones are:
+
+1. execute a real backend capture
+
+
+2. classify the first backend as ACCEPT / PROVISIONAL / REJECT
+
+
+3. run the first OMNIAMIND proxy computation on real traces
+
+
+4. compare synthetic behavior against observed backend traces
+
+
+5. revise proxy coefficients only if empirical behavior justifies it
+
+
+
+Until then, the correct project state is:
+
+Analytical branch: operational
+Backend branch: unresolved
+
+
+---
+
+Minimal conclusion
+
+OMNIAMIND is a non-semantic structural measurement layer for pre-output candidate dynamics.
+
+Its current v0 state is operational in the analytical branch through:
+
+formal proxy definitions
+
+synthetic traces
+
+deterministic execution stub
+
+
+The backend branch is prepared but not yet empirically resolved.
+
+This repository therefore represents a structurally complete analytical core awaiting real candidate-trace input.
 
