@@ -4,6 +4,7 @@
 
 **Author:** Massimiliano Brighindi  
 **Project:** MB-X.01
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19513010.svg)](https://doi.org/10.5281/zenodo.19513010)
 
 ---
 
