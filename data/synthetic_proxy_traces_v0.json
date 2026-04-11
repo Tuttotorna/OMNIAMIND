@@ -1,0 +1,67 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_01_monolithic",
+      "description": "Monolithic generation with near-total top-1 dominance.",
+      "steps": [
+        {
+          "token": "The",
+          "candidates": [
+            { "t": "The", "p": 0.99 },
+            { "t": "A", "p": 0.005 },
+            { "t": "An", "p": 0.003 },
+            { "t": "This", "p": 0.002 }
+          ]
+        }
+      ],
+      "expected_proxy": "Low Split, Zero Pressure"
+    },
+    {
+      "id": "scenario_02_bifurcation",
+      "description": "High competition with top-rank inversion across adjacent steps.",
+      "steps": [
+        {
+          "token": "is",
+          "candidates": [
+            { "t": "VALID", "p": 0.48 },
+            { "t": "INVALID", "p": 0.47 },
+            { "t": "UNCLEAR", "p": 0.03 },
+            { "t": "FALSE", "p": 0.02 }
+          ]
+        },
+        {
+          "token": "INVALID",
+          "candidates": [
+            { "t": "INVALID", "p": 0.52 },
+            { "t": "VALID", "p": 0.41 },
+            { "t": "UNCLEAR", "p": 0.04 },
+            { "t": "FALSE", "p": 0.03 }
+          ]
+        }
+      ],
+      "expected_proxy": "High Split, High Pressure"
+    },
+    {
+      "id": "scenario_03_collapse",
+      "description": "Flat candidate mass with no clear dominant continuation.",
+      "steps": [
+        {
+          "token": "...",
+          "candidates": [
+            { "t": "A", "p": 0.10 },
+            { "t": "B", "p": 0.10 },
+            { "t": "C", "p": 0.10 },
+            { "t": "D", "p": 0.10 },
+            { "t": "E", "p": 0.10 },
+            { "t": "F", "p": 0.10 },
+            { "t": "G", "p": 0.10 },
+            { "t": "H", "p": 0.10 },
+            { "t": "I", "p": 0.10 },
+            { "t": "J", "p": 0.10 }
+          ]
+        }
+      ],
+      "expected_proxy": "Max Split, Zero Pressure for single-step case"
+    }
+  ]
+}
