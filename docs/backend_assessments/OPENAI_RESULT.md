@@ -3,259 +3,110 @@
 **Author:** Massimiliano Brighindi  
 **Project:** MB-X.01  
 **Backend target:** OpenAI API  
-**Status:** Completed empirical assessment
+**Status:** Not executed
 
 ---
 
 ## Purpose
 
-This document records the actual empirical result of the OpenAI backend check for the first OMNIAMIND Level 1 experiment.
+This document records the current status of the OpenAI backend assessment for the first OMNIAMIND Level 1 path.
 
-It does not restate the protocol.
-It records the observed outcome.
-
-Its purpose is to determine whether OpenAI is:
-
-- **ACCEPT**
-- **PROVISIONAL**
-- **REJECT**
-
-for the first OMNIAMIND Level 1 proxy path.
+At the time of writing, no empirical API capture has been executed.
+Therefore, no backend classification can be finalized from observed data.
 
 ---
 
-## Test record
+## Execution status
 
-### Endpoint used
 ```text
-<fill here>
-
-Model used
-
-<fill here>
-
-Request mode used
-
-<fill here>
-
-Streaming enabled
-
-<fill here>
-
-Candidate exposure parameters
-
-<fill here>
-
-Decoding parameters
-
-<fill here>
-
-Number of repeated runs
-
-<fill here>
-
-Timestamp / date of run
-
-<fill here>
+NOT EXECUTED
 
 
 ---
-
-Check 1 — Stepwise Coverage
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Check 2 — Effective k-Depth
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Effective maximum usable k
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Check 3 — Score Semantics
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Score type observed
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Check 4 — Repeatability Under Controlled Settings
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Check 5 — Truncation / Filtering Observability
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Check 6 — Operational Consistency
-
-Result
-
-PASS / DEGRADED / FAIL
-
-Observation
-
-<fill here>
-
-Notes
-
-<fill here>
-
-
----
-
-Kill-switch status
-
-Check 1 status
-
-<fill here>
-
-Check 2 status
-
-<fill here>
-
-Kill-switch triggered
-
-YES / NO
 
 Reason
 
-<fill here>
+No real OpenAI API request was executed under the required Level 1 capture conditions.
 
+Therefore, the following required empirical artifacts are missing:
 
----
+stepwise candidate trace
 
-Summary of observed backend properties
+effective top-k candidate exposure
 
-Candidate type observed
+score semantics observed in practice
 
-<fill here>
+repeatability evidence under controlled settings
 
-Score type observed
+truncation / filtering observations
 
-<fill here>
+operational consistency observations
 
-Stepwise trace condition
-
-<fill here>
-
-Maximum usable k
-
-<fill here>
-
-Known truncation / filtering / shaping
-
-<fill here>
-
-Repeatability condition
-
-<fill here>
 
 
 ---
 
-Final classification
+Consequence
 
-ACCEPT / PROVISIONAL / REJECT
+The backend cannot move from:
+
+PROVISIONAL
+
+to:
+
+ACCEPT
+
+or:
+
+REJECT
+
+without empirical data.
+
+
+---
+
+Current classification
+
+PROVISIONAL (unresolved)
 
 Classification reason
 
-<fill here>
+OpenAI remains a provisional candidate backend because the eligibility protocol exists, but no real capture has yet been executed.
+
+This means the backend is neither validated nor rejected. It is only unverified.
 
 
 ---
 
 Decision
 
-Next step
-
-OpenAI first OMNIAMIND run
-or
-Fallback to LOCAL_CHECK.md
+OpenAI branch paused pending real API capture
 
 Decision reason
 
-<fill here>
+The project should not fabricate a backend result in the absence of observed Level 1 data.
+
+
+---
+
+Next valid options
+
+1. Execute the real OpenAI empirical capture later and update this file.
+
+
+2. Pause the OpenAI branch and move directly to local backend assessment.
+
+
 
 
 ---
 
 Minimal conclusion
 
-This document records the empirical OpenAI backend result for the first OMNIAMIND Level 1 path.
+The OpenAI backend path is currently blocked by missing empirical capture.
 
-The backend classification is:
+No final backend judgment is possible without real API output.
 
-<fill here>
+The branch remains open but unresolved.
 
-The next operational step is:
-
-<fill here>
 
