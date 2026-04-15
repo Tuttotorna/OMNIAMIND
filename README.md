@@ -1,373 +1,248 @@
-# OMNIAMIND (v2.0-alpha)
+# OMNIABASE
 
-**Structural Measurement of Split and Bifurcation Pressure in LLM Candidate Traces**
+Omniabase is a general multirepresentational framework for exposing structure beyond a single representation.
 
-**Author:** Massimiliano Brighindi  
-**Project:** MB-X.01
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19513010.svg)](https://doi.org/10.5281/zenodo.19513010)
+Its core premise is simple:
 
----
+a phenomenon should not be treated as exhausted by one coding, one coordinate system, one base, or one descriptive view.
 
-## What OMNIAMIND is
+Instead, the same object can be observed across multiple simultaneous codings in order to distinguish:
 
-OMNIAMIND is a structural measurement layer for pre-output candidate dynamics in large language models.
+- what depends on the chosen representation
+- what remains stable beyond it
+- what emerges only through cross-representational analysis
+- what collapses when representational privilege is removed
 
-It does not evaluate final output quality.  
-It does not interpret meaning.  
-It does not model psychology.  
-It does not claim cognition.
+Omniabase is not a single application.
 
-Its purpose is narrower:
-
-- measure how candidate probability mass fragments at a given step
-- measure how candidate dominance reorganizes across adjacent steps
-
-The current version focuses on two structural proxies:
-
-- **Split**
-- **Bifurcation Pressure**
+It is a general structural framework from which multiple application families can be derived.
 
 ---
 
-## Core boundary
+## Core Principle
 
-OMNIAMIND is strictly **non-semantic**.
+A single representation is often enough to describe an object locally, but not enough to determine which parts of that description belong to the phenomenon itself and which parts belong only to the chosen view.
 
-It treats the model as an evolving candidate distribution, not as a linguistic agent.
+Omniabase addresses this by treating plural representation as a method, not a variation.
 
-It does not measure:
+The goal is not simply to re-encode the same object many times.
 
-- truth
-- correctness
-- semantic similarity
-- reasoning quality
-- human-like uncertainty
+The goal is to use multiple codings to measure:
 
-It measures only the geometry of candidate probability structure.
+- invariance
+- divergence
+- emergence
+- fragility
+- compatibility
+- hidden structure
 
----
-
-## Architectural position
-
-OMNIAMIND belongs to the MB-X.01 ecosystem and sits upstream of OMNIA.
-
-```text
-Dual-Echo -> OMNIAMIND -> OMNIA -> OMNIA-LIMIT
-
-Within this chain:
-
-OMNIAMIND measures pre-output structural dynamics
-
-OMNIA measures post-hoc output stability under controlled transformations
-
-OMNIA-LIMIT defines structural stop / saturation conditions
-
-
+In this sense, Omniabase is a framework for structural analysis across representations.
 
 ---
 
-Ecosystem position
+## What Omniabase is
 
-OMNIAMIND is an upstream analytical extension of the OMNIA ecosystem.
+Omniabase is a general framework for extracting, testing, and comparing structure beyond a single representation.
 
-It does not replace OMNIA.
+It can be used wherever the same phenomenon can be expressed through multiple codings, projections, encodings, or formal views.
 
-OMNIAMIND measures pre-output structural dynamics
+This includes, depending on the branch:
 
-OMNIA remains the canonical post-hoc structural measurement engine
-
-OMNIA-LIMIT remains the downstream structural stop / saturation layer
-
-
-Canonical ecosystem map:
-https://github.com/Tuttotorna/lon-mirror/blob/main/ECOSYSTEM.md
-
+- diagnostics of stability and fragility
+- discovery of hidden coordinates or latent variables
+- translation and compatibility analysis across representations
 
 ---
 
-Current scope
+## What Omniabase is not
 
-The current repository state is split into two branches:
+Omniabase is not:
 
-Branch	Status	Note
+- a semantic oracle
+- a universal theory of everything
+- a decision engine
+- a replacement for domain-specific models
+- a claim that all representations are equivalent
 
-Analytical Branch	OPERATIONAL	Proxy definitions, synthetic traces, deterministic runner, and internal comparison logic are available.
-Backend Branch	UNRESOLVED	Real capture through OpenAI or local runtime is defined but not executed.
+It does not assume that all views are interchangeable.
 
-
-Current milestone:
-
-Repository-level clarity and synthetic proxy validation
-
-
----
-
-Current proxy layer (v0)
-
-1. Split
-
-Split measures local fragmentation of candidate probability mass at a single generation step.
-
-Version v0:
-
-S_t = 1 - max_i P_t(c_i)
-
-Interpretation:
-
-low Split -> one dominant candidate
-
-high Split -> fragmented candidate mass
-
-
-2. Bifurcation Pressure
-
-Bifurcation Pressure measures local instability between adjacent candidate states.
-
-Version v0 combines:
-
-Total Variation shift
-
-Rank Swap
-
-
-B_t = 0.7 * TV_t + 0.3 * RS_t
-
-where:
-
-TV_t measures redistribution of probability mass across adjacent steps
-
-RS_t detects whether the top-ranked candidate changed
-
-
-This is a structural proxy only.
-It is not a semantic or cognitive claim.
-
+It assumes that a phenomenon becomes structurally more legible when representation itself is made variable and analyzable.
 
 ---
 
-Repository structure
+## The Three Canonical Families
 
-README.md
-STATUS.md
-MANIFEST.md
-result_schema.py
-synthetic_proxy_runner.py
-report_generator.py
-proxy_variants.py
-proxy_variant_runner.py
-variant_report_generator.py
-docs/
-  PROXY_FORMALIZATION_v0.md
-  CORE_PHENOMENA.md
-  MEASUREMENT_SKETCH.md
-  ACCESS_LEVELS.md
-  FIRST_EXPERIMENT_PATH.md
-  FIRST_PROXIES.md
-  backend_assessments/
-    OPENAI_CHECK.md
-    OPENAI_RESULT.md
-    OPENAI_EMPIRICAL_CHECK.md
-    LOCAL_CHECK.md
-    LOCAL_RUNTIME_STATUS.md
-    LLAMA_CPP_CHECK.md
-    LLAMA_CPP_RESULT.md
-data/
-  synthetic_proxy_traces_v0.json
-  synthetic_proxy_results_v0.json
-  proxy_variant_comparison_v0_1.json
-reports/
-  synthetic_proxy_report_v0.md
-  proxy_variant_report_v0_1.md
+From the core principle of Omniabase, three canonical branches follow.
 
-Main files:
+### 1. Omniabase Diagnostics
 
-docs/PROXY_FORMALIZATION_v0.md — mathematical definition of the v0 proxy layer
+This branch uses multiple representations to test whether an observed structure remains stable beyond a single view.
 
-data/synthetic_proxy_traces_v0.json — synthetic benchmark traces
+It focuses on:
 
-synthetic_proxy_runner.py — deterministic proxy runner over synthetic traces
+- stability
+- fragility
+- drift
+- regime shifts
+- proximity to collapse
+- representation dependence
 
-proxy_variants.py — structural proxy variants (v0 and v0.1)
+Central question:
 
-proxy_variant_runner.py — internal comparison runner for proxy variants
+**When something looks stable in one representation, does that stability survive when representation changes?**
 
-docs/backend_assessments/ — backend readiness and assessment documents
+Typical outputs include:
 
+- robustness scores
+- fragility signals
+- divergence indicators
+- instability alerts
+- post-hoc gates
+- escalation triggers
 
+This is the defensive branch of Omniabase.
+
+Its function is not primarily to discover hidden coordinates, but to detect when apparent stability is structurally weak.
 
 ---
 
-Quick start (synthetic branch)
+### 2. Omniabase Coordinate Discovery
 
-The repository can already be exercised without any active backend.
+This branch uses multiple representations to expose hidden axes, latent variables, regime separations, and structural coordinates that may not appear clearly in standard human-selected views.
 
-1. Run the baseline proxy engine
+It focuses on:
 
-python synthetic_proxy_runner.py
+- hidden coordinates
+- latent factors
+- invisible symmetries
+- structural separations
+- better descriptive axes
+- more faithful reductions of complex phenomena
 
-2. Generate the baseline Markdown report
+Central question:
 
-python report_generator.py
+**What structure becomes visible only when a phenomenon is observed across multiple codings rather than a single one?**
 
-3. Run the proxy variant comparison
+Typical outputs include:
 
-python proxy_variant_runner.py
+- new descriptive coordinates
+- structural maps
+- latent variables
+- separations between generators or regimes
+- coordinate systems useful for modeling and forecasting
 
-4. Generate the variant comparison report
+This is the generative branch of Omniabase.
 
-python variant_report_generator.py
-
-This branch processes synthetic traces and writes proxy results for the predefined scenarios.
-
-The purpose of this step is not empirical model validation.
-It is structural sanity checking of the proxy logic.
-
-
----
-
-Synthetic scenarios currently included
-
-The current synthetic dataset contains three minimal controlled cases.
-
-scenario_01_monolithic
-
-Single dominant candidate, negligible competition.
-
-Expected behavior:
-
-low Split
-
-zero Pressure
-
-
-scenario_02_bifurcation
-
-Two near-parity candidates with top-rank inversion across adjacent steps.
-
-Expected behavior:
-
-high Split
-
-high Pressure
-
-
-scenario_03_collapse
-
-Flat candidate mass with no dominant continuation.
-
-Expected behavior:
-
-maximal or near-maximal Split
-
-Pressure not applicable in the single-step case
-
-
+Its function is not primarily to judge stability, but to reveal structure that standard representation compresses or hides.
 
 ---
 
-Declared limits
+### 3. Omniabase Cross-Representation Translation
 
-OMNIAMIND v0 has explicit limits.
+This branch uses multiple representations to measure compatibility and shared structural residue across different descriptions of the same object.
 
-1. No semantics
+It focuses on:
 
-The system does not know whether two candidates are synonymous, contradictory, or equivalent in meaning.
+- compatibility between descriptions
+- alignment between formalisms
+- invariant residues
+- dependence on language or encoding
+- bridge-building across views
 
-2. Observed-space only
+Central question:
 
-The current proxy layer operates only on exposed candidate distributions.
+**When two descriptions appear different, how much are they still describing the same structural object?**
 
-It does not use:
+Typical outputs include:
 
-hidden states
+- compatibility scores
+- alignment measures
+- translatability maps
+- incompatibility signals
+- shared structural residues
 
-attention maps
+This is the interface branch of Omniabase.
 
-branch traces
-
-latent geometry
-
-
-3. Synthetic branch is not empirical validation
-
-Synthetic traces are only a structural test bench.
-
-They do not prove that the proxies will behave identically on real model traces.
-
-4. Backend branch remains unresolved
-
-No OpenAI or local llama.cpp empirical capture has yet been completed inside the current project state.
-
+Its function is not primarily to detect collapse or discover hidden coordinates, but to measure how structure persists across descriptive boundaries.
 
 ---
 
-Why this repository exists in its current form
+## Unified View
 
-The project reached an infrastructure block on real backend execution.
+Omniabase starts from one principle:
 
-Instead of fabricating empirical claims, the repository was stabilized around what could be completed with full internal consistency:
+the same phenomenon should not be assumed to be fully captured by one representation.
 
-proxy definition
+From that principle, three canonical questions follow:
 
-mathematical formalization
+- if the question is whether the structure holds -> **Diagnostics**
+- if the question is what hidden structure emerges -> **Coordinate Discovery**
+- if the question is how different descriptions still relate to the same object -> **Cross-Representation Translation**
 
-synthetic validation traces
+These are not separate theories.
 
-deterministic runner
-
-internal proxy comparison
-
-backend assessment protocols
-
-
-This means the repository is analytically stable even though empirical backend validation is still pending.
-
+They are three consequences of the same multirepresentational principle.
 
 ---
 
-Next steps
+## Why this matters
 
-The next valid milestones are:
+Many systems are evaluated inside one chosen representation.
 
-1. execute a real backend capture
+This is often enough for local performance, but not enough for structural truth.
 
+A pattern may look stable only because the chosen view hides its fragility.
 
-2. classify the first backend as ACCEPT, PROVISIONAL, or REJECT
+A hidden variable may remain invisible only because the chosen coordinates compress it.
 
+Two descriptions may appear incompatible only because their shared structural residue has not been isolated.
 
-3. run the first OMNIAMIND proxy computation on real traces
+Omniabase exists to operate at this level:
 
-
-4. compare synthetic behavior against observed backend traces
-
-
-5. revise proxy coefficients only if empirical behavior justifies it
-
-
-
-Until then, the correct project state is:
-
-Analytical branch: operational
-Backend branch: unresolved
-
+not only to describe objects,
+but to test what survives, emerges, or fails when representation itself becomes part of the analysis.
 
 ---
 
-Minimal conclusion
+## Repository role
 
-OMNIAMIND is a non-semantic structural measurement layer for pre-output candidate dynamics.
+This repository defines Omniabase at the general level.
 
-Its current v0 / v0.1 state is operational in the analytical branch through:
+It is the umbrella repository for the framework as a whole.
 
-formal proxy definitions
+Branch-specific repositories may include, for example:
 
-synthetic traces
+- Omniabase Diagnostics
+- Omniabase Coordinate Discovery
+- Omniabase Cross-Representation Translation
 
-deterministic execution stubs
+This repository is intended to host:
 
-internal proxy comparison
+- the core principle
+- the shared conceptual architecture
+- foundational documents
+- branch taxonomy
+- links to derived implementations and experiments
 
+---
 
-The backend branch is prepared but not yet empirically resolved.
+## Summary
 
-This repository therefore represents a structurally complete analytical core awaiting real candidate-trace input.
+Omniabase is a general framework for structural analysis across multiple representations.
+
+It is built on a simple idea:
+
+a phenomenon is not exhausted by one view.
+
+By observing the same object across multiple codings, Omniabase aims to distinguish:
+
+- representation-dependent structure
+- representation-resistant structure
+- emergent cross-view structure
+- structural collapse under representational change
+
+Its three canonical families are:
+
+- Diagnostics
+- Coordinate Discovery
+- Cross-Representation Translation
