@@ -1,248 +1,194 @@
-# OMNIABASE
+# OMNIAMIND
 
-Omniabase is a general multirepresentational framework for exposing structure beyond a single representation.
+OMNIAMIND is an offline analytical package for testing cognitive pipelines under structural constraints.
+
+It is not OMNIA.
+
+OMNIA measures structural coherence, fragility, invariance, and instability.
+
+OMNIAMIND orchestrates analytical steps around those measurements.
 
 Its core premise is simple:
 
-a phenomenon should not be treated as exhausted by one coding, one coordinate system, one base, or one descriptive view.
+a cognitive system should not rely only on narrative confidence, fluent output, or apparent reasoning.
 
-Instead, the same object can be observed across multiple simultaneous codings in order to distinguish:
-
-- what depends on the chosen representation
-- what remains stable beyond it
-- what emerges only through cross-representational analysis
-- what collapses when representational privilege is removed
-
-Omniabase is not a single application.
-
-It is a general structural framework from which multiple application families can be derived.
+It should be tested through structural measurement before being trusted, extended, or acted upon.
 
 ---
 
 ## Core Principle
 
-A single representation is often enough to describe an object locally, but not enough to determine which parts of that description belong to the phenomenon itself and which parts belong only to the chosen view.
+OMNIAMIND treats cognition as a process that can be constrained, audited, and interrupted by structural signals.
 
-Omniabase addresses this by treating plural representation as a method, not a variation.
+The goal is not to simulate a human mind.
 
-The goal is not simply to re-encode the same object many times.
+The goal is to test whether a reasoning pipeline remains coherent when exposed to structural pressure.
 
-The goal is to use multiple codings to measure:
+OMNIAMIND is built around the separation:
 
-- invariance
-- divergence
-- emergence
-- fragility
-- compatibility
-- hidden structure
+```text
+measurement != inference != decision
 
-In this sense, Omniabase is a framework for structural analysis across representations.
+OMNIA measures.
 
----
+OMNIAMIND organizes the analytical flow.
 
-## What Omniabase is
+The final decision layer remains external.
 
-Omniabase is a general framework for extracting, testing, and comparing structure beyond a single representation.
-
-It can be used wherever the same phenomenon can be expressed through multiple codings, projections, encodings, or formal views.
-
-This includes, depending on the branch:
-
-- diagnostics of stability and fragility
-- discovery of hidden coordinates or latent variables
-- translation and compatibility analysis across representations
 
 ---
 
-## What Omniabase is not
+What OMNIAMIND is
 
-Omniabase is not:
+OMNIAMIND is a coordination layer for structural cognition experiments.
 
-- a semantic oracle
-- a universal theory of everything
-- a decision engine
-- a replacement for domain-specific models
-- a claim that all representations are equivalent
+It can combine:
 
-It does not assume that all views are interchangeable.
+input analysis
 
-It assumes that a phenomenon becomes structurally more legible when representation itself is made variable and analyzable.
+multi-step reasoning
 
----
+observer reduction
 
-## The Three Canonical Families
+structural measurement
 
-From the core principle of Omniabase, three canonical branches follow.
+coherence checks
 
-### 1. Omniabase Diagnostics
+fragility detection
 
-This branch uses multiple representations to test whether an observed structure remains stable beyond a single view.
+stop conditions
 
-It focuses on:
+escalation logic
 
-- stability
-- fragility
-- drift
-- regime shifts
-- proximity to collapse
-- representation dependence
 
-Central question:
+Its purpose is to explore how cognition behaves when it is constrained by measurable structure rather than by surface plausibility.
 
-**When something looks stable in one representation, does that stability survive when representation changes?**
-
-Typical outputs include:
-
-- robustness scores
-- fragility signals
-- divergence indicators
-- instability alerts
-- post-hoc gates
-- escalation triggers
-
-This is the defensive branch of Omniabase.
-
-Its function is not primarily to discover hidden coordinates, but to detect when apparent stability is structurally weak.
 
 ---
 
-### 2. Omniabase Coordinate Discovery
+What OMNIAMIND is not
 
-This branch uses multiple representations to expose hidden axes, latent variables, regime separations, and structural coordinates that may not appear clearly in standard human-selected views.
+OMNIAMIND is not:
 
-It focuses on:
+a human mind
 
-- hidden coordinates
-- latent factors
-- invisible symmetries
-- structural separations
-- better descriptive axes
-- more faithful reductions of complex phenomena
+a sentient system
 
-Central question:
+a semantic oracle
 
-**What structure becomes visible only when a phenomenon is observed across multiple codings rather than a single one?**
+a decision engine
 
-Typical outputs include:
+a replacement for OMNIA
 
-- new descriptive coordinates
-- structural maps
-- latent variables
-- separations between generators or regimes
-- coordinate systems useful for modeling and forecasting
+a replacement for domain expertise
 
-This is the generative branch of Omniabase.
+a claim that reasoning can be reduced to metrics
 
-Its function is not primarily to judge stability, but to reveal structure that standard representation compresses or hides.
+
+It does not decide truth.
+
+It does not replace judgment.
+
+It tests whether a reasoning process remains structurally stable enough to continue.
+
 
 ---
 
-### 3. Omniabase Cross-Representation Translation
+Relationship to OMNIA
 
-This branch uses multiple representations to measure compatibility and shared structural residue across different descriptions of the same object.
+OMNIA is the measurement engine.
 
-It focuses on:
+OMNIAMIND is the orchestration layer.
 
-- compatibility between descriptions
-- alignment between formalisms
-- invariant residues
-- dependence on language or encoding
-- bridge-building across views
+OMNIA      -> measures structural behavior
+OMNIAMIND  -> organizes analytical cognition around those measurements
 
-Central question:
+A simple pipeline:
 
-**When two descriptions appear different, how much are they still describing the same structural object?**
+Input
+  ->
+Reasoning / analysis layer
+  ->
+OMNIA structural measurement
+  ->
+OMNIA-LIMIT stop condition
+  ->
+External decision layer
 
-Typical outputs include:
+OMNIAMIND must preserve the boundary:
 
-- compatibility scores
-- alignment measures
-- translatability maps
-- incompatibility signals
-- shared structural residues
+measurement -> constraint
+constraint  -> signal
+signal      -> not final truth
 
-This is the interface branch of Omniabase.
-
-Its function is not primarily to detect collapse or discover hidden coordinates, but to measure how structure persists across descriptive boundaries.
-
----
-
-## Unified View
-
-Omniabase starts from one principle:
-
-the same phenomenon should not be assumed to be fully captured by one representation.
-
-From that principle, three canonical questions follow:
-
-- if the question is whether the structure holds -> **Diagnostics**
-- if the question is what hidden structure emerges -> **Coordinate Discovery**
-- if the question is how different descriptions still relate to the same object -> **Cross-Representation Translation**
-
-These are not separate theories.
-
-They are three consequences of the same multirepresentational principle.
 
 ---
 
-## Why this matters
+Why this matters
 
-Many systems are evaluated inside one chosen representation.
+Modern AI systems often produce fluent outputs even when their internal structure is unstable.
 
-This is often enough for local performance, but not enough for structural truth.
+A response may sound correct while being fragile.
 
-A pattern may look stable only because the chosen view hides its fragility.
+A chain of reasoning may appear coherent while depending on hidden assumptions.
 
-A hidden variable may remain invisible only because the chosen coordinates compress it.
+A model may continue confidently after the structure has already collapsed.
 
-Two descriptions may appear incompatible only because their shared structural residue has not been isolated.
+OMNIAMIND exists to test that failure mode.
 
-Omniabase exists to operate at this level:
+It asks:
 
-not only to describe objects,
-but to test what survives, emerges, or fails when representation itself becomes part of the analysis.
+Should this reasoning process continue?
+Should it be measured again?
+Should it be stopped?
+Should it be escalated?
 
----
+The purpose is not to make AI more verbose.
 
-## Repository role
+The purpose is to make cognitive pipelines more accountable to structure.
 
-This repository defines Omniabase at the general level.
-
-It is the umbrella repository for the framework as a whole.
-
-Branch-specific repositories may include, for example:
-
-- Omniabase Diagnostics
-- Omniabase Coordinate Discovery
-- Omniabase Cross-Representation Translation
-
-This repository is intended to host:
-
-- the core principle
-- the shared conceptual architecture
-- foundational documents
-- branch taxonomy
-- links to derived implementations and experiments
 
 ---
 
-## Summary
+Repository role
 
-Omniabase is a general framework for structural analysis across multiple representations.
+This repository defines and packages OMNIAMIND as an offline analytical layer.
 
-It is built on a simple idea:
+Its role is to connect structural tools into a coherent experimental architecture.
 
-a phenomenon is not exhausted by one view.
+Related components may include:
 
-By observing the same object across multiple codings, Omniabase aims to distinguish:
+OMNIA
 
-- representation-dependent structure
-- representation-resistant structure
-- emergent cross-view structure
-- structural collapse under representational change
+OMNIABASE
 
-Its three canonical families are:
+observer-suspension
 
-- Diagnostics
-- Coordinate Discovery
-- Cross-Representation Translation
+OMNIA-LIMIT
+
+Pre-Deployment Structural Gate
+
+reason-bridge
+
+
+OMNIAMIND sits above structural measurement and below final decision.
+
+It does not replace either.
+
+
+---
+
+Summary
+
+OMNIAMIND is a structural cognition orchestration layer.
+
+It does not claim to be a mind.
+
+It tests whether reasoning can be constrained by structural measurement.
+
+Its central distinction is:
+
+OMNIA measures.
+OMNIAMIND orchestrates.
+Decision remains external.
+
