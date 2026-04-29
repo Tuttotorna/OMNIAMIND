@@ -192,3 +192,101 @@ OMNIA measures.
 OMNIAMIND orchestrates.
 Decision remains external.
 
+---
+
+---
+
+# Ecosystem Structure
+
+```text
+LON-MIRROR
+|
+├── CORE
+|   ├── OMNIA
+|   ├── omnia-limit
+|   └── OMNIA-RADAR
+|
+├── REPRESENTATION
+|   └── OMNIABASE
+|
+└── APPLICATIONS
+    ├── OMNIA-SECURITY
+    ├── OMNIA-CRYPTO
+    └── OMNIAMIND
+```
+
+## Root
+
+- [LON-MIRROR](https://github.com/Tuttotorna/lon-mirror)
+
+Canonical ecosystem hub, lineage map, navigation layer, and coordination entry point.
+
+---
+
+## Core
+
+- [OMNIA](https://github.com/Tuttotorna/OMNIA)
+
+Core structural measurement framework.
+
+- [omnia-limit](https://github.com/Tuttotorna/omnia-limit)
+
+Structural stopping conditions, saturation, irreducibility, and limit behavior.
+
+- [OMNIA-RADAR](https://github.com/Tuttotorna/OMNIA-RADAR)
+
+Structural drift surfacing and trajectory visualization layer.
+
+---
+
+## Representation
+
+- [OMNIABASE](https://github.com/Tuttotorna/OMNIABASE)
+
+Multi-base structural representation and invariance exploration layer.
+
+---
+
+## Applications
+
+- [OMNIA-SECURITY](https://github.com/Tuttotorna/OMNIA-SECURITY)
+
+Bounded structural diagnostics for security-relevant systems.
+
+- [OMNIA-CRYPTO](https://github.com/Tuttotorna/OMNIA-CRYPTO)
+
+Bounded structural diagnostics for cryptographic behavior.
+
+- [OMNIAMIND](https://github.com/Tuttotorna/OMNIAMIND)
+
+Bounded structural diagnostics for cognitive and reasoning-related behavior.
+
+---
+
+# Architectural Separation
+
+```text
+LON-MIRROR
+=
+ecosystem hub
+
+OMNIA
+=
+core structural measurement layer
+
+Other repositories
+=
+representation layers,
+limit layers,
+visualization layers,
+or bounded domain verticalizations.
+```
+
+---
+
+# Core Boundary
+
+```text
+measurement != inference != decision
+```
+
