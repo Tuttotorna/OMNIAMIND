@@ -9,6 +9,8 @@ It is part of the **MB-X.01 / L.O.N. ecosystem**.
 It is not OMNIA.
 
 It is not a human mind.
+It is not consciousness.
+It is not a truth oracle.
 It is not artificial consciousness.
 It is not a semantic oracle.
 It is not a decision engine.
