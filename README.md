@@ -1,184 +1,187 @@
 # OMNIAMIND
 
-OMNIAMIND is an offline analytical package for testing cognitive pipelines under structural constraints.
+OMNIAMIND is a structural cognition orchestration layer.
 
 It is not OMNIA.
 
-OMNIA measures structural coherence, fragility, invariance, and instability.
+It is not a human mind.
+It is not artificial consciousness.
+It is not a semantic oracle.
+It is not a decision engine.
 
-OMNIAMIND orchestrates analytical steps around those measurements.
+Its role is to organize analytical cognition around structural measurement.
 
-Its core premise is simple:
+OMNIA measures structural behavior.
+OMNIAMIND organizes the cognitive flow around those measurements.
+OMNIA-LIMIT defines when the process should stop, continue, retry, or escalate.
+The final decision remains external.
 
-a cognitive system should not rely only on narrative confidence, fluent output, or apparent reasoning.
-
-It should be tested through structural measurement before being trusted, extended, or acted upon.
-
----
-
-## Core Principle
-
-OMNIAMIND treats cognition as a process that can be constrained, audited, and interrupted by structural signals.
-
-The goal is not to simulate a human mind.
-
-The goal is to test whether a reasoning pipeline remains coherent when exposed to structural pressure.
-
-OMNIAMIND is built around the separation:
-
-```text
-measurement != inference != decision
-
-OMNIA measures.
-
-OMNIAMIND organizes the analytical flow.
-
-The final decision layer remains external.
-
+    organization != measurement != decision
 
 ---
 
-What OMNIAMIND is
+## Core idea
+
+A cognitive system should not rely only on fluent output, narrative confidence, or apparent reasoning.
+
+A reasoning process may sound correct while being structurally fragile.
+
+OMNIAMIND exists to test that failure mode.
+
+It asks whether a reasoning pipeline remains coherent enough to continue when exposed to structural pressure.
+
+---
+
+## What OMNIAMIND is
 
 OMNIAMIND is a coordination layer for structural cognition experiments.
 
-It can combine:
+It can organize:
 
-input analysis
+- input analysis
+- reasoning steps
+- observer reduction
+- structural measurement
+- coherence checks
+- fragility detection
+- stop conditions
+- escalation logic
 
-multi-step reasoning
+Its purpose is not to simulate a mind.
 
-observer reduction
-
-structural measurement
-
-coherence checks
-
-fragility detection
-
-stop conditions
-
-escalation logic
-
-
-Its purpose is to explore how cognition behaves when it is constrained by measurable structure rather than by surface plausibility.
-
+Its purpose is to expose whether a cognitive process remains structurally stable under measurement, perturbation, and constraint.
 
 ---
 
-What OMNIAMIND is not
+## What OMNIAMIND is not
 
 OMNIAMIND is not:
 
-a human mind
-
-a sentient system
-
-a semantic oracle
-
-a decision engine
-
-a replacement for OMNIA
-
-a replacement for domain expertise
-
-a claim that reasoning can be reduced to metrics
-
+- a sentient system
+- a human-like mind
+- a truth oracle
+- a semantic judge
+- a decision engine
+- a replacement for OMNIA
+- a replacement for domain expertise
+- a claim that reasoning can be reduced to metrics
 
 It does not decide truth.
 
 It does not replace judgment.
 
-It tests whether a reasoning process remains structurally stable enough to continue.
-
+It tests whether a reasoning process is structurally stable enough to continue.
 
 ---
 
-Relationship to OMNIA
+## Relation to OMNIA
 
-OMNIA is the measurement engine.
+OMNIA is the measurement layer.
 
 OMNIAMIND is the orchestration layer.
 
-OMNIA      -> measures structural behavior
-OMNIAMIND  -> organizes analytical cognition around those measurements
+    OMNIA      = structural measurement layer
+    OMNIAMIND  = structural cognition orchestration layer
+    LIMIT      = stop / continue / retry / escalate boundary
+    Decision   = external human or system layer
 
-A simple pipeline:
+The boundary is strict:
 
-Input
-  ->
-Reasoning / analysis layer
-  ->
-OMNIA structural measurement
-  ->
-OMNIA-LIMIT stop condition
-  ->
-External decision layer
+    measurement != inference != decision
+
+OMNIA measures coherence, fragility, invariance, instability, and structural behavior.
+
+OMNIAMIND organizes analytical cognition around those measurements.
+
+The final decision remains outside the system.
+
+---
+
+## Minimal pipeline
+
+    Input
+      ↓
+    Reasoning / analysis layer
+      ↓
+    OMNIAMIND
+      ↓
+    OMNIA structural measurement
+      ↓
+    OMNIA-LIMIT
+      ↓
+    External decision layer
 
 OMNIAMIND must preserve the boundary:
 
-measurement -> constraint
-constraint  -> signal
-signal      -> not final truth
-
-
----
-
-Why this matters
-
-Modern AI systems often produce fluent outputs even when their internal structure is unstable.
-
-A response may sound correct while being fragile.
-
-A chain of reasoning may appear coherent while depending on hidden assumptions.
-
-A model may continue confidently after the structure has already collapsed.
-
-OMNIAMIND exists to test that failure mode.
-
-It asks:
-
-Should this reasoning process continue?
-Should it be measured again?
-Should it be stopped?
-Should it be escalated?
-
-The purpose is not to make AI more verbose.
-
-The purpose is to make cognitive pipelines more accountable to structure.
-
+    measurement -> constraint
+    constraint  -> signal
+    signal      -> not final truth
 
 ---
 
-Repository role
+## Why this matters
 
-This repository defines and packages OMNIAMIND as an offline analytical layer.
+Modern AI systems can produce fluent outputs even when their underlying structure is unstable.
+
+A response can sound correct while being fragile.
+
+A chain of reasoning can appear coherent while depending on hidden assumptions.
+
+A model can continue confidently after the structure has already collapsed.
+
+OMNIAMIND exists to make that failure mode measurable and interruptible.
+
+The goal is not to make AI more verbose.
+
+The goal is to make cognitive pipelines more accountable to structural measurement.
+
+---
+
+## Repository role
+
+This repository defines OMNIAMIND as an offline analytical layer for structural cognition experiments.
 
 Its role is to connect structural tools into a coherent experimental architecture.
 
-Related components may include:
+Related components:
 
-OMNIA
-
-OMNIABASE
-
-observer-suspension
-
-OMNIA-LIMIT
-
-Pre-Deployment Structural Gate
-
-reason-bridge
-
+- OMNIA: https://github.com/Tuttotorna/OMNIA
+- OMNIA-INVARIANCE: https://github.com/Tuttotorna/OMNIA-INVARIANCE
+- OMNIABASE: https://github.com/Tuttotorna/OMNIABASE
+- observer-suspension: https://github.com/Tuttotorna/observer-suspension
+- omnia-limit: https://github.com/Tuttotorna/omnia-limit
+- Pre-Deployment Structural Gate: https://github.com/Tuttotorna/Pre-Deployment-Structural-Gate
+- reason-bridge: https://github.com/Tuttotorna/reason-bridge
+- lon-mirror: https://github.com/Tuttotorna/lon-mirror
 
 OMNIAMIND sits above structural measurement and below final decision.
 
 It does not replace either.
 
+---
+
+## MB-X.01 ecosystem position
+
+    L.O.N. / MB-X.01
+      ↓
+    OMNIAMIND
+      ↓
+    OMNIA
+      ↓
+    OMNIA-LIMIT
+      ↓
+    External decision layer
+
+The clean architectural reading is:
+
+    OMNIAMIND organizes.
+    OMNIA measures.
+    OMNIA-LIMIT interrupts.
+    Decision remains external.
 
 ---
 
-Summary
+## Summary
 
 OMNIAMIND is a structural cognition orchestration layer.
 
@@ -188,151 +191,6 @@ It tests whether reasoning can be constrained by structural measurement.
 
 Its central distinction is:
 
-OMNIA measures.
-OMNIAMIND orchestrates.
-Decision remains external.
-
----
-
-```text
-LON-MIRROR
-|
-├── CORE
-|   ├── OMNIA
-|   ├── OMNIA-INVARIANCE
-|   ├── omnia-limit
-|   └── OMNIA-RADAR
-|
-├── RESEARCH
-|   ├── OMNIA-CONSTANT
-|   └── OMNIA-THREE-BODY
-|
-├── REPRESENTATION
-|   └── OMNIABASE
-|
-└── APPLICATIONS
-    ├── OMNIA-SECURITY
-    ├── OMNIA-CRYPTO
-    └── OMNIAMIND
-
-Root
-
-LON-MIRROR
-
-
-Canonical ecosystem hub, lineage map, navigation layer, and coordination entry point.
-
-
----
-
-Core
-
-OMNIA
-
-
-Core structural measurement framework.
-
-OMNIA-INVARIANCE
-
-
-Core validation and invariance-testing repository.
-Focuses on structural invariance, perturbation behavior, and controlled evidence around Ω under transformation.
-
-omnia-limit
-
-
-Structural stopping conditions, saturation, irreducibility, and limit behavior.
-
-OMNIA-RADAR
-
-
-Structural drift surfacing and trajectory visualization layer.
-
-
----
-
-Research
-
-OMNIA-CONSTANT
-
-
-Post-analysis and falsification repository for Ω-region behavior.
-Current focus: whether observed Ω corridors behave as structural transition regimes or collapse as measurement artifacts.
-No universal structural constant is declared.
-
-OMNIA-THREE-BODY
-
-
-Experimental dynamics repository for multi-body structural interaction tests.
-Focuses on instability, trajectory interaction, and non-trivial structural behavior under interacting perturbations.
-
-
----
-
-Representation
-
-OMNIABASE
-
-
-Multi-base structural representation and invariance exploration layer.
-
-
----
-
-Applications
-
-OMNIA-SECURITY
-
-
-Bounded structural diagnostics for security-relevant systems.
-
-OMNIA-CRYPTO
-
-
-Bounded structural diagnostics for cryptographic behavior.
-
-OMNIAMIND
-
-
-Bounded structural diagnostics for cognitive and reasoning-related behavior.
-
-
----
-
-Architectural Separation
-
-LON-MIRROR
-=
-ecosystem hub
-
-OMNIA
-=
-core structural measurement layer
-
-OMNIA-INVARIANCE
-=
-core invariance validation layer
-
-OMNIA-CONSTANT
-=
-post-analysis / falsification layer for Ω-region behavior
-
-OMNIA-THREE-BODY
-=
-experimental structural dynamics layer
-
-Other repositories
-=
-representation layers,
-limit layers,
-visualization layers,
-or bounded domain verticalizations.
-
-
----
-
-Core Boundary
-
-measurement != inference != decision
----
-
+    OMNIA measures.
+    OMNIAMIND orchestrates.
+    Decision remains external.
