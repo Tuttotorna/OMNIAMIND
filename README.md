@@ -286,6 +286,8 @@ organize -> measure -> gate -> external decision
 - Foundation: [`docs/OMNIAMIND_FOUNDATION.md`](docs/OMNIAMIND_FOUNDATION.md)
 - Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - Boundaries: [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md)
+- Validation note: [`docs/VALIDATION_NOTE.md`](docs/VALIDATION_NOTE.md)
+- Minimal pipeline output: [`examples/minimal_pipeline_output.md`](examples/minimal_pipeline_output.md)
 - Citation metadata: [`CITATION.cff`](CITATION.cff)
 
 ---
