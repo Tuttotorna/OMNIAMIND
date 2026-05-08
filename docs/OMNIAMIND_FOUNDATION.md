@@ -1,5 +1,7 @@
 # OMNIAMIND Foundation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19513010.svg)](https://doi.org/10.5281/zenodo.19513010)
+
 ## Definition
 
 OMNIAMIND is a structural cognition orchestration layer.
@@ -16,7 +18,9 @@ Its boundary is structural.
 
 ## Core distinction
 
-    OMNIAMIND != OMNIA
+```text
+OMNIAMIND != OMNIA
+```
 
 OMNIAMIND organizes the analytical flow.
 
@@ -26,23 +30,27 @@ OMNIA-LIMIT defines when the process should stop, continue, retry, or escalate.
 
 The final decision remains external.
 
-    organization != measurement != decision
+```text
+organization != measurement != decision
+```
 
 ---
 
 ## Architectural position
 
-    Input
-      ↓
-    Cognitive / analytical process
-      ↓
-    OMNIAMIND
-      ↓
-    OMNIA
-      ↓
-    OMNIA-LIMIT
-      ↓
-    External decision layer
+```text
+Input
+  ↓
+Cognitive / analytical process
+  ↓
+OMNIAMIND
+  ↓
+OMNIA
+  ↓
+OMNIA-LIMIT
+  ↓
+External decision layer
+```
 
 This makes OMNIAMIND an interface between cognition and structural diagnostics.
 
@@ -96,7 +104,9 @@ It cannot convert signals into final truth.
 
 The central boundary is:
 
-    measurement != inference != decision
+```text
+measurement != inference != decision
+```
 
 A structural measurement can constrain inference.
 
@@ -112,7 +122,9 @@ This is the core safety boundary of OMNIAMIND.
 
 ## Minimal principle
 
-    A reasoning process should not continue merely because it is fluent.
-    It should continue only if its structure remains stable enough under measurement.
+```text
+A reasoning process should not continue merely because it is fluent.
+It should continue only if its structure remains stable enough under measurement.
+```
 
 OMNIAMIND exists to organize that test.

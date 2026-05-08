@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the archived Zenodo record."
+title: "OMNIAMIND v0.1.0 — Frozen Offline Analytical Package"
+authors:
+  - family-names: "Brighindi"
+    given-names: "Massimiliano"
+repository-code: "https://github.com/Tuttotorna/OMNIAMIND"
+doi: "10.5281/zenodo.19513010"
+version: "0.1.0"
+date-released: "2026-04-01"
+license: "MIT"
