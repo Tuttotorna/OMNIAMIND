@@ -343,3 +343,21 @@ OMNIAMIND orchestrates.
 OMNIA-LIMIT interrupts.
 Decision remains external.
 ```
+
+---
+
+## OMNIAMIND — Public Boundary
+
+- OMNIAMIND is a structural cognition orchestration layer.
+- OMNIAMIND is not consciousness.
+- OMNIAMIND is not artificial consciousness.
+- OMNIAMIND is not a truth oracle.
+- OMNIAMIND is not a semantic judge.
+- OMNIAMIND is not a decision engine.
+- OMNIAMIND organizes analytical cognition around structural measurement.
+- OMNIA measures.
+- OMNIA-LIMIT interrupts.
+- measurement != inference != decision
+- decision remains external
+
+This section is a public boundary clarification. It does not change the repository core logic.
