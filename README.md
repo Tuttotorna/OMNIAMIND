@@ -28,6 +28,8 @@ organization != measurement != decision
 
 ---
 
+- [`docs/OMNIAMIND_PUBLIC_POSITION.md`](docs/OMNIAMIND_PUBLIC_POSITION.md)
+
 ## Core idea
 
 A cognitive system should not rely only on fluent output, narrative confidence, or apparent reasoning.
@@ -303,6 +305,36 @@ It should continue only if its structure remains stable enough under measurement
 ```
 
 OMNIAMIND exists to organize that test.
+
+---
+
+## Public position
+
+OMNIAMIND public positioning is documented here:
+
+- [`docs/OMNIAMIND_PUBLIC_POSITION.md`](docs/OMNIAMIND_PUBLIC_POSITION.md)
+
+Core role:
+
+```text
+OMNIAMIND          = orchestration
+OMNIA              = structural measurement
+OMNIA-LIMIT        = structural boundary
+OMNIA-VALIDATION   = reproducibility / traceability / falsification
+Decision           = external
+```
+
+OMNIAMIND does not replace OMNIA.
+
+OMNIAMIND does not decide truth.
+
+OMNIAMIND does not make final decisions.
+
+It organizes diagnostic flow while preserving the boundary:
+
+```text
+measurement != inference != decision
+```
 
 ---
 
