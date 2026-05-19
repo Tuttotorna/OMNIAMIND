@@ -28,8 +28,6 @@ organization != measurement != decision
 
 ---
 
-- [`docs/OMNIAMIND_PUBLIC_POSITION.md`](docs/OMNIAMIND_PUBLIC_POSITION.md)
-
 ## Core idea
 
 A cognitive system should not rely only on fluent output, narrative confidence, or apparent reasoning.
@@ -335,7 +333,6 @@ It organizes diagnostic flow while preserving the boundary:
 ```text
 measurement != inference != decision
 ```
-
 ---
 
 ## Citation
