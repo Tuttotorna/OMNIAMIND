@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-05-20T13:08:48.906300+00:00",
+  "repository": "OMNIAMIND",
+  "role": "structural cognition orchestration layer",
+  "ecosystem": "MB-X.01 / OMNIA",
+  "canonical_boundary": "measurement != inference != decision",
+  "mind_pipeline": [
+    "observation",
+    "structural reasoning workflow",
+    "OMNIA measurement",
+    "limit boundary",
+    "external decision"
+  ],
+  "public_claim": "OMNIAMIND organizes structural cognition workflows around OMNIA measurements without becoming consciousness, oracle, or decision engine.",
+  "non_claims": [
+    "does not claim artificial consciousness",
+    "does not infer semantic truth by itself",
+    "does not decide correctness",
+    "does not replace OMNIA measurement",
+    "does not replace OMNIA-VALIDATION",
+    "does not replace external judgment",
+    "does not convert orchestration into final decision"
+  ],
+  "expected_docs": [
+    "README.md",
+    "docs/QUICKSTART_OMNIAMIND.md",
+    "docs/ORCHESTRATION_OVERVIEW.md",
+    "docs/COGNITION_WORKFLOW_CONTRACT.md",
+    "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+    "docs/BOUNDARY.md",
+    "docs/OMNIAMIND_MANIFEST.json"
+  ],
+  "related_repositories": [
+    {
+      "name": "lon-mirror",
+      "url": "https://github.com/Tuttotorna/lon-mirror",
+      "role": "Canonical ecosystem entry point"
+    },
+    {
+      "name": "OMNIA-VALIDATION",
+      "url": "https://github.com/Tuttotorna/OMNIA-VALIDATION",
+      "role": "Public validation showroom"
+    },
+    {
+      "name": "OMNIA",
+      "url": "https://github.com/Tuttotorna/OMNIA",
+      "role": "Core structural measurement engine"
+    },
+    {
+      "name": "OMNIABASE",
+      "url": "https://github.com/Tuttotorna/OMNIABASE",
+      "role": "Representation invariance foundation"
+    },
+    {
+      "name": "OMNIA-RADAR",
+      "url": "https://github.com/Tuttotorna/OMNIA-RADAR",
+      "role": "Structural signal detection layer"
+    },
+    {
+      "name": "OMNIA-INVARIANCE",
+      "url": "https://github.com/Tuttotorna/OMNIA-INVARIANCE",
+      "role": "Transformation and invariance layer"
+    },
+    {
+      "name": "omnia-limit",
+      "url": "https://github.com/Tuttotorna/omnia-limit",
+      "role": "Stop / continue boundary layer"
+    },
+    {
+      "name": "OMNIA-CONSTANT",
+      "url": "https://github.com/Tuttotorna/OMNIA-CONSTANT",
+      "role": "Stable-region falsification layer"
+    }
+  ]
+}

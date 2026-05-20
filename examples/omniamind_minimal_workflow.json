@@ -1,0 +1,21 @@
+{
+  "case_id": "omniamind-minimal-workflow-v0",
+  "purpose": "Demonstrate the OMNIAMIND workflow contract without claiming consciousness, semantic truth, or final decision.",
+  "boundary": "measurement != inference != decision",
+  "pipeline": [
+    "observation",
+    "structural reasoning workflow",
+    "OMNIA measurement",
+    "limit boundary",
+    "external decision"
+  ],
+  "observation_ref": "placeholder observation",
+  "workflow_step": "placeholder routing step",
+  "route": "OMNIA",
+  "measurement_ref": null,
+  "limit_ref": null,
+  "validation_ref": null,
+  "workflow_result": "inconclusive",
+  "limitation": "This placeholder artifact defines the public OMNIAMIND workflow shape. It is not a consciousness or decision result.",
+  "external_decision": "Decision remains external"
+}
