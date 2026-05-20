@@ -4,15 +4,55 @@
 
 [![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
 
-Release DOI: [10.5281/zenodo.20087134](https://doi.org/10.5281/zenodo.20087134)
+Release DOI:
 
-GitHub release: [OMNIAMIND v1.0.0 release](https://github.com/Tuttotorna/OMNIAMIND/releases/tag/v1.0.0)
+    10.5281/zenodo.20087134
+
+Zenodo latest DOI link:
+
+    https://doi.org/10.5281/zenodo.20087134
+
+GitHub release:
+
+    https://github.com/Tuttotorna/OMNIAMIND/releases/tag/v1.0.0
+
+**Structural cognition orchestration layer.**
+
+OMNIAMIND is the structural cognition workflow layer of the MB-X.01 / OMNIA ecosystem.
+
+Its role is narrow:
+
+    observation -> structural reasoning workflow -> OMNIA measurement -> limit boundary -> external decision
+
+It asks one question:
+
+    how should structural observations be organized before, during, and after OMNIA measurement?
+
+OMNIAMIND is not the ecosystem landing page.
+
+It is not the validation showroom.
+
+It is not the OMNIA core measurement engine.
+
+It is not artificial consciousness.
+
+It is not a decision engine.
+
+It is not a truth oracle.
+
+It organizes structural cognition workflows around measurement boundaries.
+
+Canonical boundary:
+
+    measurement != inference != decision
+
+---
 
 ## Start here
 
 From a clean environment:
 
-    git clone [OMNIAMIND.git](https://github.com/Tuttotorna/OMNIAMIND.git)
+    git clone https://github.com/Tuttotorna/OMNIAMIND.git
     cd OMNIAMIND
     python -m pytest
 
@@ -130,49 +170,38 @@ Meaning:
 
 ---
 
-## Ecosystem entry point
-
-For the full ecosystem map, start here:
-
-[lon-mirror](https://github.com/Tuttotorna/lon-mirror)
-
-For public validation artifacts, start here:
-
-[OMNIA-VALIDATION](https://github.com/Tuttotorna/OMNIA-VALIDATION)
-
-For core structural measurement, start here:
-
-[OMNIA](https://github.com/Tuttotorna/OMNIA)
-
----
-
 ## Related repositories
 
 | Repository | Role |
 |---|---|
-| [lon-mirror](https://github.com/Tuttotorna/lon-mirror) | Canonical public entry point |
+| [lon-mirror](https://github.com/Tuttotorna/lon-mirror) | Canonical ecosystem entry point |
 | [OMNIA-VALIDATION](https://github.com/Tuttotorna/OMNIA-VALIDATION) | Public validation showroom |
 | [OMNIA](https://github.com/Tuttotorna/OMNIA) | Core structural measurement engine |
 | [OMNIABASE](https://github.com/Tuttotorna/OMNIABASE) | Representation invariance foundation |
-| [omnia-limit](https://github.com/Tuttotorna/omnia-limit) | Stop / continue boundary layer |
 | [OMNIA-RADAR](https://github.com/Tuttotorna/OMNIA-RADAR) | Structural signal detection layer |
-| [OMNIA-INVARIANCE](https://github.com/Tuttotorna/OMNIA-INVARIANCE) | Structural invariance layer |
-| [OMNIA-CONSTANT](https://github.com/Tuttotorna/OMNIA-CONSTANT) | Structural constant candidate layer |
-| [OMNIAMIND](https://github.com/Tuttotorna/OMNIAMIND) | Structural cognition orchestration layer |
-| [OMNIA-THREE-BODY](https://github.com/Tuttotorna/OMNIA-THREE-BODY) | Dynamic divergence stress test |
-| [OMNIA-SECURITY](https://github.com/Tuttotorna/OMNIA-SECURITY) | Bounded structural security diagnostics |
-| [OMNIA-CRYPTO](https://github.com/Tuttotorna/OMNIA-CRYPTO) | Bounded structural crypto diagnostics |
+| [OMNIA-INVARIANCE](https://github.com/Tuttotorna/OMNIA-INVARIANCE) | Transformation and invariance layer |
+| [omnia-limit](https://github.com/Tuttotorna/omnia-limit) | Stop / continue boundary layer |
+| [OMNIA-CONSTANT](https://github.com/Tuttotorna/OMNIA-CONSTANT) | Stable-region falsification layer |
 
 ---
 
-## Boundary and smoke-test required terms
+## Ecosystem entry point
 
-    measurement != inference != decision
-    It is not artificial consciousness
-    It is not a decision engine
+For the full ecosystem map, start here:
+
+    https://github.com/Tuttotorna/lon-mirror
+
+For public validation artifacts, start here:
+
+    https://github.com/Tuttotorna/OMNIA-VALIDATION
+
+For core structural measurement, start here:
+
+    https://github.com/Tuttotorna/OMNIA
 
 ---
 
 ## License
 
 MIT.
+
