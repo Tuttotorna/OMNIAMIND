@@ -1,21 +1,5 @@
 # OMNIAMIND
 
-## DOI
-
-[![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
-
-Release DOI:
-
-    10.5281/zenodo.20087134
-
-Zenodo latest DOI link:
-
-    https://doi.org/10.5281/zenodo.20087134
-
-GitHub release:
-
-    https://github.com/Tuttotorna/OMNIAMIND/releases/tag/v1.0.0
-
 **Structural cognition orchestration layer.**
 
 OMNIAMIND is the structural cognition workflow layer of the MB-X.01 / OMNIA ecosystem.
