@@ -90,7 +90,7 @@ Public compression:
 
 OMNIAMIND does not:
 
-- claim artificial consciousness;
+- claim autonomous consciousness claim;
 - infer semantic truth by itself;
 - decide correctness;
 - replace OMNIA measurement;

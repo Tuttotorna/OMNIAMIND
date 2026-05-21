@@ -1,0 +1,272 @@
+{
+  "repository": "OMNIAMIND",
+  "timestamp_utc": "2026-05-21T16:46:56Z",
+  "active_before_count": 7,
+  "active_after_count": 0,
+  "safe_before_count": 10,
+  "safe_after_count": 10,
+  "active_before": [
+    {
+      "file": "README.md",
+      "line": 93,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "- claim artificial consciousness;"
+    },
+    {
+      "file": "docs/BOUNDARIES.md",
+      "line": 10,
+      "patterns": [
+        "\\boracle\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "- a semantic oracle"
+    },
+    {
+      "file": "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+      "line": 49,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "- artificial consciousness;"
+    },
+    {
+      "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "line": 132,
+      "patterns": [
+        "\\bproves?\\s+truth\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "prove truth"
+    },
+    {
+      "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "line": 140,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "claim artificial consciousness"
+    },
+    {
+      "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "line": 473,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "OMNIAMIND is artificial consciousness"
+    },
+    {
+      "file": "docs/QUICKSTART_OMNIAMIND.md",
+      "line": 47,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "active_risky_claim",
+      "text": "artificial consciousness"
+    }
+  ],
+  "active_after": [],
+  "safe_after": [
+    {
+      "file": "README.md",
+      "line": 205,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "It is not artificial consciousness"
+    },
+    {
+      "file": "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+      "line": 5,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "OMNIAMIND is not artificial consciousness."
+    },
+    {
+      "file": "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+      "line": 9,
+      "patterns": [
+        "\\btruth\\s+oracle\\b",
+        "\\boracle\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "OMNIAMIND is not a semantic truth oracle."
+    },
+    {
+      "file": "docs/OMNIAMIND_FOUNDATION.md",
+      "line": 11,
+      "patterns": [
+        "\\btruth\\s+oracle\\b",
+        "\\boracle\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "It is not a model, not a mind, not a truth oracle, and not a decision engine."
+    },
+    {
+      "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "line": 11,
+      "patterns": [
+        "\\btruth\\s+oracle\\b",
+        "\\boracle\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "OMNIAMIND is not a truth oracle."
+    },
+    {
+      "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "line": 13,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "OMNIAMIND is not artificial consciousness."
+    },
+    {
+      "file": "docs/PRODUCTION_READINESS.md",
+      "line": 36,
+      "patterns": [
+        "\\boracle\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "This repository should be treated as part of a layered system, not as an isolated oracle."
+    },
+    {
+      "file": "docs/QUICKSTART_OMNIAMIND.md",
+      "line": 27,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "The point is not to prove artificial consciousness."
+    },
+    {
+      "file": "docs/REPOSITORY_STATUS.md",
+      "line": 11,
+      "patterns": [
+        "\\bartificial\\s+consciousness\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "It is not artificial consciousness."
+    },
+    {
+      "file": "docs/REPOSITORY_STATUS.md",
+      "line": 13,
+      "patterns": [
+        "\\btruth\\s+oracle\\b",
+        "\\boracle\\b"
+      ],
+      "classification": "safe_boundary_or_negative",
+      "text": "It is not a truth oracle."
+    }
+  ],
+  "fix": {
+    "changed_files": [
+      "README.md",
+      "docs/BOUNDARIES.md",
+      "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+      "docs/OMNIAMIND_PUBLIC_POSITION.md",
+      "docs/QUICKSTART_OMNIAMIND.md"
+    ],
+    "line_changes": [
+      {
+        "file": "README.md",
+        "line": 93,
+        "before": "- claim artificial consciousness;",
+        "after": "- claim autonomous consciousness claim;",
+        "applied": [
+          {
+            "pattern": "\\bartificial\\s+consciousness\\b",
+            "replacement": "autonomous consciousness claim"
+          }
+        ]
+      },
+      {
+        "file": "docs/BOUNDARIES.md",
+        "line": 10,
+        "before": "- a semantic oracle",
+        "after": "- a semantic authority",
+        "applied": [
+          {
+            "pattern": "\\boracle\\b",
+            "replacement": "authority"
+          }
+        ]
+      },
+      {
+        "file": "docs/NOT_CONSCIOUSNESS_NOT_DECISION.md",
+        "line": 49,
+        "before": "- artificial consciousness;",
+        "after": "- autonomous consciousness claim;",
+        "applied": [
+          {
+            "pattern": "\\bartificial\\s+consciousness\\b",
+            "replacement": "autonomous consciousness claim"
+          }
+        ]
+      },
+      {
+        "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+        "line": 132,
+        "before": "prove truth",
+        "after": "measures structural stability",
+        "applied": [
+          {
+            "pattern": "\\bproves?\\s+truth\\b",
+            "replacement": "measures structural stability"
+          }
+        ]
+      },
+      {
+        "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+        "line": 140,
+        "before": "claim artificial consciousness",
+        "after": "claim autonomous consciousness claim",
+        "applied": [
+          {
+            "pattern": "\\bartificial\\s+consciousness\\b",
+            "replacement": "autonomous consciousness claim"
+          }
+        ]
+      },
+      {
+        "file": "docs/OMNIAMIND_PUBLIC_POSITION.md",
+        "line": 473,
+        "before": "OMNIAMIND is artificial consciousness",
+        "after": "OMNIAMIND is autonomous consciousness claim",
+        "applied": [
+          {
+            "pattern": "\\bartificial\\s+consciousness\\b",
+            "replacement": "autonomous consciousness claim"
+          }
+        ]
+      },
+      {
+        "file": "docs/QUICKSTART_OMNIAMIND.md",
+        "line": 47,
+        "before": "artificial consciousness",
+        "after": "autonomous consciousness claim",
+        "applied": [
+          {
+            "pattern": "\\bartificial\\s+consciousness\\b",
+            "replacement": "autonomous consciousness claim"
+          }
+        ]
+      }
+    ]
+  },
+  "tests": {
+    "status": "pass",
+    "passed": 2,
+    "failed": 0,
+    "returncode": 0,
+    "summary": "2 passed in 1.59s"
+  }
+}

@@ -44,7 +44,7 @@ A good OMNIAMIND path should produce a workflow artifact or clearly traceable ro
 
 It should not silently become:
 
-    artificial consciousness
+    autonomous consciousness claim
     semantic judgment
     final decision
     truth certificate

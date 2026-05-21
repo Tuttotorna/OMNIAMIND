@@ -46,7 +46,7 @@ OMNIAMIND may:
 
 OMNIAMIND should not claim:
 
-- artificial consciousness;
+- autonomous consciousness claim;
 - subjective experience;
 - autonomous judgment;
 - semantic truth;

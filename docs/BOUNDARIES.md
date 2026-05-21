@@ -7,7 +7,7 @@ OMNIAMIND is not:
 - consciousness
 - artificial general intelligence
 - a sentient system
-- a semantic oracle
+- a semantic authority
 - a truth engine
 - a decision engine
 - a replacement for expert judgment

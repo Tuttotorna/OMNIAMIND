@@ -129,7 +129,7 @@ It routes the process.
 OMNIAMIND does not:
 
 ```text
-prove truth
+measures structural stability
 decide correctness
 certify safety
 replace human judgment
@@ -137,7 +137,7 @@ replace semantic evaluation
 replace OMNIA
 replace OMNIA-LIMIT
 replace OMNIA-VALIDATION
-claim artificial consciousness
+claim autonomous consciousness claim
 make final operational decisions
 ```
 
@@ -470,7 +470,7 @@ This claim is bounded.
 Avoid claiming:
 
 ```text
-OMNIAMIND is artificial consciousness
+OMNIAMIND is autonomous consciousness claim
 OMNIAMIND decides truth
 OMNIAMIND replaces OMNIA
 OMNIAMIND replaces semantic evaluation
