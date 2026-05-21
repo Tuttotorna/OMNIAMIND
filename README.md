@@ -1,16 +1,35 @@
+<!-- MB-X.01 LON RELEASE:START -->
+
+## MB-X.01 / L.O.N. release state
+
+Repository: Tuttotorna/OMNIAMIND
+Release tag: v2026.05.21
+Release commit: c47118b
+Release DOI: 10.5281/zenodo.20322692
+
+Boundary:
+
+measurement != validation
+validation != orchestration
+orchestration != decision
+decision != measurement
+
+<!-- MB-X.01 LON RELEASE:END -->
+
 # OMNIAMIND
 
 <!-- ZENODO DOI:START -->
 
 ## DOI
 
-[![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
+[![DOI](https://zenodo.org/badge/DOI/10.5281%2Fzenodo.20322692.svg)](https://doi.org/10.5281/zenodo.20322692)
 
 Zenodo DOI badge for this repository.
 
 Repository: Tuttotorna/OMNIAMIND
 GitHub repository id: 1127158097
-Latest release DOI: pending Zenodo publication or resolved dynamically by Zenodo badge
+Release tag: v2026.05.21
+Latest release DOI: 10.5281/zenodo.20322692
 
 <!-- ZENODO DOI:END -->
 
