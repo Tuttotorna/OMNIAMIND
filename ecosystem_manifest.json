@@ -1,0 +1,25 @@
+{
+  "repository": "OMNIAMIND",
+  "owner": "Tuttotorna",
+  "ecosystem": "MB-X.01 / OMNIA",
+  "role": "Structural cognition orchestration layer.",
+  "status": "orchestration",
+  "contract": "Coordinates structural measurements and gates; it is not consciousness, semantic truth, or decision authority.",
+  "boundary": "measurement != inference != decision",
+  "backbone": [
+    "OMNIA",
+    "omnia-limit",
+    "OMNIA-VALIDATION"
+  ],
+  "satellites": [
+    "OMNIABASE",
+    "OMNIA-RADAR",
+    "OMNIA-SECURITY",
+    "OMNIA-CRYPTO",
+    "OMNIAMIND",
+    "OMNIA-THREE-BODY",
+    "OMNIA-INVARIANCE",
+    "OMNIA-CONSTANT"
+  ],
+  "last_hardening_pass_utc": "2026-05-21T14:03:44Z"
+}
