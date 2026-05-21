@@ -1,5 +1,20 @@
 # OMNIAMIND
 
+<!-- ZENODO DOI:START -->
+
+## DOI
+
+[![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
+
+Zenodo DOI badge for this repository.
+
+Repository: Tuttotorna/OMNIAMIND
+GitHub repository id: 1127158097
+Latest release DOI: pending Zenodo publication or resolved dynamically by Zenodo badge
+
+<!-- ZENODO DOI:END -->
+
+
 ## DOI
 
 [![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
