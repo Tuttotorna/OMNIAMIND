@@ -3,6 +3,10 @@ message: "If you use OMNIAMIND or OMNIAMIND Orchestration Auditor, please cite t
 title: "OMNIAMIND: Cognition-Orchestration Boundary Auditing for Measurement, Gates, Halt Signals, and External Decision Ownership"
 version: "0.1.1"
 date-released: "2026-05-25"
+doi: "10.5281/zenodo.20372695"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20372695"
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"

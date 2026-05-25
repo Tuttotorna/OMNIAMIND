@@ -1,3 +1,7 @@
+# OMNIAMIND
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20372695.svg)](https://doi.org/10.5281/zenodo.20372695)
+
 <!-- OMNIAMIND_ORCHESTRATOR_TOP_START -->
 
 # OMNIAMIND
@@ -251,7 +255,6 @@ decision != measurement
 
 ## DOI
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281%2Fzenodo.20322692.svg)](https://doi.org/10.5281/zenodo.20322692)
 
 Zenodo DOI badge for this repository.
 
@@ -265,7 +268,6 @@ Latest release DOI: 10.5281/zenodo.20322692
 
 ## DOI
 
-[![DOI](https://zenodo.org/badge/1127158097.svg)](https://zenodo.org/badge/latestdoi/1127158097)
 
 Release DOI: [10.5281/zenodo.20087134](https://doi.org/10.5281/zenodo.20087134)
 
