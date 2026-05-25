@@ -4,7 +4,6 @@
 
 <!-- OMNIAMIND_ORCHESTRATOR_TOP_START -->
 
-# OMNIAMIND
 
 ## Concrete entrypoint: OMNIAMIND Orchestration Auditor
 
