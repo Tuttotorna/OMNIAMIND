@@ -450,3 +450,31 @@ measurement != inference != decision
 ```
 
 This repository is part of the MB-X.01 / OMNIA ecosystem. Its outputs must be read as structural measurement, validation, detection, orchestration or adapter artifacts according to the repository role. They are not autonomous semantic truth claims and they do not make external decisions.
+
+<!-- STRUCTURAL_OBSERVABILITY_ROLE_START -->
+## Structural Observability role
+
+This repository is one bounded measurement role inside **Structural Observability**.
+
+Role:
+
+~~~text
+orchestration layer without decision or consciousness claim
+~~~
+
+Boundary:
+
+~~~text
+OMNIA measures. OMNIAMIND orchestrates. OMNIA-LIMIT interrupts. Decision remains external.
+~~~
+
+Structural Observability foundation:
+
+- lon-mirror: https://github.com/Tuttotorna/lon-mirror
+- Foundation release: https://github.com/Tuttotorna/lon-mirror/releases/tag/v0.2.2
+- DOI: https://doi.org/10.5281/zenodo.20379374
+
+Role document:
+
+- [Structural Observability Role](docs/STRUCTURAL_OBSERVABILITY_ROLE.md)
+<!-- STRUCTURAL_OBSERVABILITY_ROLE_END -->
