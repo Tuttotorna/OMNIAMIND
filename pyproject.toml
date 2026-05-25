@@ -23,3 +23,6 @@ include = ["omniamind*"]
 [tool.ruff]
 target-version = "py310"
 line-length = 88
+
+[project.scripts]
+omniamind-orchestrate-audit = "omniamind_orchestrator.cli:main"

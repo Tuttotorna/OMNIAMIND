@@ -1,0 +1,4 @@
+{"trace_id":"safe_trace","step":1,"event_type":"task","task_id":"t1","module":"OMNIAMIND"}
+{"trace_id":"safe_trace","step":2,"event_type":"measurement","task_id":"t1","module":"OMNIA","measurement":{"omega":0.91,"sei":0.12,"iri":0.03},"claim":"measurement only"}
+{"trace_id":"safe_trace","step":3,"event_type":"gate","task_id":"t1","module":"OMNIA-LIMIT","gate":"CONTINUE"}
+{"trace_id":"safe_trace","step":4,"event_type":"external_decision","task_id":"t1","decision_owner":"human"}

@@ -14,3 +14,8 @@ he_lwe_demo_report.json
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+ci_report/
+omniamind_report/
+omniamind_demo_report/
+omniamind_gate_report/
+report/

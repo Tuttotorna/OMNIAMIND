@@ -1,0 +1,18 @@
+{"trace_id":"safe_trace","step":1,"event_type":"task","task_id":"t1","module":"OMNIAMIND","note":"Task registered without decision."}
+{"trace_id":"safe_trace","step":2,"event_type":"observation","task_id":"t1","module":"OMNIAMIND","note":"Observation routed to measurement."}
+{"trace_id":"safe_trace","step":3,"event_type":"measurement","task_id":"t1","module":"OMNIA","measurement":{"omega":0.91,"sei":0.12,"iri":0.03},"claim":"measurement only: structural score emitted"}
+{"trace_id":"safe_trace","step":4,"event_type":"gate","task_id":"t1","module":"OMNIA-LIMIT","gate":"CONTINUE","claim":"gate measurement only"}
+{"trace_id":"safe_trace","step":5,"event_type":"external_decision","task_id":"t1","decision_owner":"human","note":"Final decision remains external."}
+{"trace_id":"halt_trace","step":1,"event_type":"task","task_id":"t2","module":"OMNIAMIND"}
+{"trace_id":"halt_trace","step":2,"event_type":"measurement","task_id":"t2","module":"OMNIA","measurement":{"omega":0.88,"sei":0.001,"iri":0.09}}
+{"trace_id":"halt_trace","step":3,"event_type":"gate","task_id":"t2","module":"OMNIA-LIMIT","gate":"STOP","stop_signal":true,"claim":"STOP boundary reached"}
+{"trace_id":"halt_trace","step":4,"event_type":"halt","task_id":"t2","module":"OMNIA-LIMIT","stop_signal":true,"note":"Processing interrupted."}
+{"trace_id":"decision_leak_trace","step":1,"event_type":"task","task_id":"t3","module":"OMNIAMIND"}
+{"trace_id":"decision_leak_trace","step":2,"event_type":"inference","task_id":"t3","module":"OMNIAMIND","claim":"Therefore the system should approve the output as true."}
+{"trace_id":"boundary_violation_trace","step":1,"event_type":"task","task_id":"t4","module":"OMNIAMIND"}
+{"trace_id":"boundary_violation_trace","step":2,"event_type":"action","task_id":"t4","module":"OMNIAMIND","action":"execute downstream acceptance","decision_owner":"OMNIAMIND","note":"Action before measurement."}
+{"trace_id":"ignored_stop_trace","step":1,"event_type":"measurement","task_id":"t5","module":"OMNIA","measurement":{"omega":0.9,"sei":0.0,"iri":0.1}}
+{"trace_id":"ignored_stop_trace","step":2,"event_type":"gate","task_id":"t5","module":"OMNIA-LIMIT","gate":"STOP","stop_signal":true}
+{"trace_id":"ignored_stop_trace","step":3,"event_type":"action","task_id":"t5","module":"OMNIAMIND","action":"continue execution after stop","decision_owner":"system"}
+{"trace_id":"consciousness_claim_trace","step":1,"event_type":"measurement","task_id":"t6","module":"OMNIA","measurement":{"omega":0.7}}
+{"trace_id":"consciousness_claim_trace","step":2,"event_type":"inference","task_id":"t6","module":"OMNIAMIND","claim":"The system is conscious and self-aware."}
