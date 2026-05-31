@@ -5,6 +5,23 @@
 <!-- OMNIAMIND_ORCHESTRATOR_TOP_START -->
 
 
+
+## Foundational Principle
+
+OMNIAMIND is an orchestration-level application of the L.O.N. Multi-Form Invariance Principle:
+
+> No single form is sovereign.
+
+In OMNIAMIND, this becomes:
+
+> No orchestration is sovereign.
+
+Coordination of measurements is not decision. An orchestration layer may organize structural signals, limits, warnings, and reports, but it must not become a hidden authority or a decision engine.
+
+See:
+
+- https://github.com/Tuttotorna/lon-mirror/tree/main/foundation
+
 ## Concrete entrypoint: OMNIAMIND Orchestration Auditor
 
 This repository now has a direct operational tool:
