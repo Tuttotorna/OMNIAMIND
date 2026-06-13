@@ -1,30 +1,11 @@
 cff-version: 1.2.0
-message: "If you use OMNIAMIND or OMNIAMIND Orchestration Auditor, please cite this archived release."
-title: "OMNIAMIND: Cognition-Orchestration Boundary Auditing for Measurement, Gates, Halt Signals, and External Decision Ownership"
-version: "0.1.1"
-date-released: "2026-05-25"
-doi: "10.5281/zenodo.20372695"
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.20372695"
+message: "If you use this software, please cite it using the metadata from this file."
+title: "OMNIAMIND: OMNIA Structural Observability Repository"
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"
-repository-code: "https://github.com/Tuttotorna/OMNIAMIND"
+    affiliation: "Independent researcher"
+version: "v0.1.1"
+date-released: 2026-06-13
 url: "https://github.com/Tuttotorna/OMNIAMIND"
-license: "MIT"
-abstract: "OMNIAMIND provides a standalone Orchestration Auditor for auditing cognition-like orchestration traces against the OMNIA / OMNIAMIND / OMNIA-LIMIT boundary. The tool reads JSONL events describing tasks, observations, measurements, gates, halts, actions, inferences, and external decisions; detects boundary violations, decision leaks, ignored halt conditions, actions before measurement, and consciousness or semantic-truth claims; and emits reproducible JSON, CSV, HTML, JSONL, and certificate outputs. OMNIAMIND is not artificial consciousness, not a decision engine, not a semantic-truth engine, and not a replacement for OMNIA. Boundary: OMNIA measures; OMNIAMIND orchestrates; OMNIA-LIMIT interrupts; the decision remains external."
-keywords:
-  - "OMNIAMIND"
-  - "cognition orchestration"
-  - "boundary audit"
-  - "decision leak detection"
-  - "halt condition"
-  - "OMNIA-LIMIT"
-  - "structural measurement"
-  - "non-decision architecture"
-  - "external decision ownership"
-  - "OMNIA"
-  - "MB-X.01"
-  - "Logical Origin Node"
-  - "open source"
+type: software
